@@ -519,53 +519,103 @@
 			visibility: visible !important;
 		}
 	</style>
-<style id="snp-lb-css">
-#snp-lb{position:fixed;inset:0;z-index:999999;background:rgba(0,0,0,.93);display:none;align-items:center;justify-content:center;cursor:zoom-out}
-#snp-lb.open{display:flex}
-#snp-lb img{max-width:92vw;max-height:92vh;border-radius:8px;box-shadow:0 12px 50px rgba(0,0,0,.7)}
-#snp-lb .snp-x{position:absolute;top:16px;right:26px;color:#fff;font-size:42px;line-height:1;cursor:pointer;font-family:sans-serif}
-#snp-lb .snp-nav{position:absolute;top:50%;transform:translateY(-50%);color:#fff;font-size:46px;cursor:pointer;user-select:none;padding:0 22px;opacity:.85}
-#snp-lb .snp-prev{left:6px}#snp-lb .snp-next{right:6px}
-</style>
-<script id="snp-lb-js">
-(function(){
-  var imgs=[],idx=0,ov,im;
-  function collect(){
-    imgs=[].slice.call(document.querySelectorAll('a[data-elementor-open-lightbox="yes"][href]'))
-      .map(function(a){return a.getAttribute('href');})
-      .filter(function(h){return /\.(jpe?g|png|webp|gif)/i.test(h);});
-  }
-  function show(i){ if(!imgs.length)return; idx=(i+imgs.length)%imgs.length; im.src=imgs[idx]; ov.classList.add('open'); }
-  function close(){ ov.classList.remove('open'); }
-  function build(){
-    ov=document.createElement('div'); ov.id='snp-lb';
-    im=document.createElement('img');
-    var x=document.createElement('div'); x.className='snp-x'; x.innerHTML='&times;';
-    var p=document.createElement('div'); p.className='snp-nav snp-prev'; p.innerHTML='&#8249;';
-    var n=document.createElement('div'); n.className='snp-nav snp-next'; n.innerHTML='&#8250;';
-    ov.appendChild(im); ov.appendChild(x); ov.appendChild(p); ov.appendChild(n);
-    document.body.appendChild(ov);
-    ov.addEventListener('click',function(e){ if(e.target===ov||e.target===x) close(); });
-    p.addEventListener('click',function(e){ e.stopPropagation(); show(idx-1); });
-    n.addEventListener('click',function(e){ e.stopPropagation(); show(idx+1); });
-    document.addEventListener('keydown',function(e){ if(!ov.classList.contains('open'))return;
-      if(e.key==='Escape')close(); if(e.key==='ArrowLeft')show(idx-1); if(e.key==='ArrowRight')show(idx+1); });
-  }
-  function init(){
-    build();
-    document.addEventListener('click',function(e){
-      var a=e.target.closest('a[data-elementor-open-lightbox="yes"]');
-      if(a){ var href=a.getAttribute('href')||'';
-        if(/\.(jpe?g|png|webp|gif)/i.test(href)){
-          e.preventDefault(); e.stopPropagation();
-          collect(); var i=imgs.indexOf(href); if(i<0){imgs.push(href);i=imgs.length-1;} show(i);
-        }
-      }
-    },true);
-  }
-  if(document.readyState!=='loading') init(); else document.addEventListener('DOMContentLoaded',init);
-})();
-</script></head>
+	<style id="snp-lb-css">
+		#snp-lb {
+			position: fixed;
+			inset: 0;
+			z-index: 999999;
+			background: rgba(0, 0, 0, .93);
+			display: none;
+			align-items: center;
+			justify-content: center;
+			cursor: zoom-out
+		}
+
+		#snp-lb.open {
+			display: flex
+		}
+
+		#snp-lb img {
+			max-width: 92vw;
+			max-height: 92vh;
+			border-radius: 8px;
+			box-shadow: 0 12px 50px rgba(0, 0, 0, .7)
+		}
+
+		#snp-lb .snp-x {
+			position: absolute;
+			top: 16px;
+			right: 26px;
+			color: #fff;
+			font-size: 42px;
+			line-height: 1;
+			cursor: pointer;
+			font-family: sans-serif
+		}
+
+		#snp-lb .snp-nav {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			color: #fff;
+			font-size: 46px;
+			cursor: pointer;
+			user-select: none;
+			padding: 0 22px;
+			opacity: .85
+		}
+
+		#snp-lb .snp-prev {
+			left: 6px
+		}
+
+		#snp-lb .snp-next {
+			right: 6px
+		}
+	</style>
+	<script id="snp-lb-js">
+			(function () {
+				var imgs = [], idx = 0, ov, im;
+				function collect() {
+					imgs = [].slice.call(document.querySelectorAll('a[data-elementor-open-lightbox="yes"][href]'))
+						.map(function (a) { return a.getAttribute('href'); })
+						.filter(function (h) { return /\.(jpe?g|png|webp|gif)/i.test(h); });
+				}
+				function show(i) { if (!imgs.length) return; idx = (i + imgs.length) % imgs.length; im.src = imgs[idx]; ov.classList.add('open'); }
+				function close() { ov.classList.remove('open'); }
+				function build() {
+					ov = document.createElement('div'); ov.id = 'snp-lb';
+					im = document.createElement('img');
+					var x = document.createElement('div'); x.className = 'snp-x'; x.innerHTML = '&times;';
+					var p = document.createElement('div'); p.className = 'snp-nav snp-prev'; p.innerHTML = '&#8249;';
+					var n = document.createElement('div'); n.className = 'snp-nav snp-next'; n.innerHTML = '&#8250;';
+					ov.appendChild(im); ov.appendChild(x); ov.appendChild(p); ov.appendChild(n);
+					document.body.appendChild(ov);
+					ov.addEventListener('click', function (e) { if (e.target === ov || e.target === x) close(); });
+					p.addEventListener('click', function (e) { e.stopPropagation(); show(idx - 1); });
+					n.addEventListener('click', function (e) { e.stopPropagation(); show(idx + 1); });
+					document.addEventListener('keydown', function (e) {
+						if (!ov.classList.contains('open')) return;
+						if (e.key === 'Escape') close(); if (e.key === 'ArrowLeft') show(idx - 1); if (e.key === 'ArrowRight') show(idx + 1);
+					});
+				}
+				function init() {
+					build();
+					document.addEventListener('click', function (e) {
+						var a = e.target.closest('a[data-elementor-open-lightbox="yes"]');
+						if (a) {
+							var href = a.getAttribute('href') || '';
+							if (/\.(jpe?g|png|webp|gif)/i.test(href)) {
+								e.preventDefault(); e.stopPropagation();
+								collect(); var i = imgs.indexOf(href); if (i < 0) { imgs.push(href); i = imgs.length - 1; } show(i);
+							}
+						}
+					}, true);
+				}
+				if (document.readyState !== 'loading') init(); else document.addEventListener('DOMContentLoaded', init);
+			})();
+	</script>
+</head>
 
 <body
 	class="page-template page-template-elementor_header_footer page page-id-528 wp-embed-responsive jkit-color-scheme theme-default elementor-default elementor-template-full-width elementor-kit-17 elementor-page elementor-page-528">
@@ -1479,7 +1529,7 @@
 						<div class="elementor-element elementor-element-237909b elementor-widget elementor-widget-text-editor"
 							data-id="237909b" data-element_type="widget" data-e-type="widget"
 							data-widget_type="text-editor.default">
-							<p style="font-family: Nunito,sans-serif;">©2026 | Salt N Pepper | Develop by  by  <a
+							<p style="font-family: Nunito,sans-serif;">©2026 | Salt N Pepper | Develop by <a
 									class="popup-link"
 									style="position: relative; color: #0177d9; text-decoration: none;"
 									href="https://uminber.com/"><b>Uminber Designs</b></a></p>
@@ -1579,7 +1629,7 @@
 						<div class="elementor-element elementor-element-aeb40ff elementor-widget elementor-widget-text-editor"
 							data-id="aeb40ff" data-element_type="widget" data-e-type="widget"
 							data-widget_type="text-editor.default">
-							<p style="font-family: Nunito,sans-serif;">©2026 | Salt N Pepper | Develop by  by  <a
+							<p style="font-family: Nunito,sans-serif;">©2026 | Salt N Pepper | Develop by <a
 									class="popup-link"
 									style="position: relative; color: #0177d9; text-decoration: none;"
 									href="https://uminber.com/"><b>Uminber Designs</b></a></p>

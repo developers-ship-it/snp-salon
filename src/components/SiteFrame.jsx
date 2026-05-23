@@ -13,7 +13,7 @@ export default function SiteFrame({ page }) {
         ref={ref}
         key={page}
         title="Salt 'N' Pepper"
-        src={`/pages/${page}.html?v=16`}
+        src={`/pages/${page}.html?v=17`}
         className="site-frame"
         onLoad={() => setLoading(false)}
       />

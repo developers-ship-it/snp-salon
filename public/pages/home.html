@@ -519,59 +519,132 @@
 			visibility: visible !important;
 		}
 	</style>
-<style id="snp-lb-css">
-#snp-lb{position:fixed;inset:0;z-index:999999;background:rgba(0,0,0,.93);display:none;align-items:center;justify-content:center;cursor:zoom-out}
-#snp-lb.open{display:flex}
-#snp-lb img{max-width:92vw;max-height:92vh;border-radius:8px;box-shadow:0 12px 50px rgba(0,0,0,.7)}
-#snp-lb .snp-x{position:absolute;top:16px;right:26px;color:#fff;font-size:42px;line-height:1;cursor:pointer;font-family:sans-serif}
-#snp-lb .snp-nav{position:absolute;top:50%;transform:translateY(-50%);color:#fff;font-size:46px;cursor:pointer;user-select:none;padding:0 22px;opacity:.85}
-#snp-lb .snp-prev{left:6px}#snp-lb .snp-next{right:6px}
-</style>
-<script id="snp-lb-js">
-(function(){
-  var imgs=[],idx=0,ov,im;
-  function collect(){
-    imgs=[].slice.call(document.querySelectorAll('a[data-elementor-open-lightbox="yes"][href]'))
-      .map(function(a){return a.getAttribute('href');})
-      .filter(function(h){return /\.(jpe?g|png|webp|gif)/i.test(h);});
-  }
-  function show(i){ if(!imgs.length)return; idx=(i+imgs.length)%imgs.length; im.src=imgs[idx]; ov.classList.add('open'); }
-  function close(){ ov.classList.remove('open'); }
-  function build(){
-    ov=document.createElement('div'); ov.id='snp-lb';
-    im=document.createElement('img');
-    var x=document.createElement('div'); x.className='snp-x'; x.innerHTML='&times;';
-    var p=document.createElement('div'); p.className='snp-nav snp-prev'; p.innerHTML='&#8249;';
-    var n=document.createElement('div'); n.className='snp-nav snp-next'; n.innerHTML='&#8250;';
-    ov.appendChild(im); ov.appendChild(x); ov.appendChild(p); ov.appendChild(n);
-    document.body.appendChild(ov);
-    ov.addEventListener('click',function(e){ if(e.target===ov||e.target===x) close(); });
-    p.addEventListener('click',function(e){ e.stopPropagation(); show(idx-1); });
-    n.addEventListener('click',function(e){ e.stopPropagation(); show(idx+1); });
-    document.addEventListener('keydown',function(e){ if(!ov.classList.contains('open'))return;
-      if(e.key==='Escape')close(); if(e.key==='ArrowLeft')show(idx-1); if(e.key==='ArrowRight')show(idx+1); });
-  }
-  function init(){
-    build();
-    document.addEventListener('click',function(e){
-      var a=e.target.closest('a[data-elementor-open-lightbox="yes"]');
-      if(a){ var href=a.getAttribute('href')||'';
-        if(/\.(jpe?g|png|webp|gif)/i.test(href)){
-          e.preventDefault(); e.stopPropagation();
-          collect(); var i=imgs.indexOf(href); if(i<0){imgs.push(href);i=imgs.length-1;} show(i);
-        }
-      }
-    },true);
-  }
-  if(document.readyState!=='loading') init(); else document.addEventListener('DOMContentLoaded',init);
-})();
-</script><style id="snp-video-fit">
-.elementor-background-video-container{position:absolute!important;top:0;left:0;right:0;bottom:0;width:100%!important;height:100%!important;overflow:hidden!important;}
-.elementor-background-video-hosted{position:absolute!important;top:0;left:0;width:100%!important;height:100%!important;object-fit:cover!important;max-width:none!important;}
-@media (max-width:767px),(orientation:portrait){
- .elementor-element-2b4efa3f{min-height:100vh!important;}
-}
-</style></head>
+	<style id="snp-lb-css">
+		#snp-lb {
+			position: fixed;
+			inset: 0;
+			z-index: 999999;
+			background: rgba(0, 0, 0, .93);
+			display: none;
+			align-items: center;
+			justify-content: center;
+			cursor: zoom-out
+		}
+
+		#snp-lb.open {
+			display: flex
+		}
+
+		#snp-lb img {
+			max-width: 92vw;
+			max-height: 92vh;
+			border-radius: 8px;
+			box-shadow: 0 12px 50px rgba(0, 0, 0, .7)
+		}
+
+		#snp-lb .snp-x {
+			position: absolute;
+			top: 16px;
+			right: 26px;
+			color: #fff;
+			font-size: 42px;
+			line-height: 1;
+			cursor: pointer;
+			font-family: sans-serif
+		}
+
+		#snp-lb .snp-nav {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			color: #fff;
+			font-size: 46px;
+			cursor: pointer;
+			user-select: none;
+			padding: 0 22px;
+			opacity: .85
+		}
+
+		#snp-lb .snp-prev {
+			left: 6px
+		}
+
+		#snp-lb .snp-next {
+			right: 6px
+		}
+	</style>
+	<script id="snp-lb-js">
+			(function () {
+				var imgs = [], idx = 0, ov, im;
+				function collect() {
+					imgs = [].slice.call(document.querySelectorAll('a[data-elementor-open-lightbox="yes"][href]'))
+						.map(function (a) { return a.getAttribute('href'); })
+						.filter(function (h) { return /\.(jpe?g|png|webp|gif)/i.test(h); });
+				}
+				function show(i) { if (!imgs.length) return; idx = (i + imgs.length) % imgs.length; im.src = imgs[idx]; ov.classList.add('open'); }
+				function close() { ov.classList.remove('open'); }
+				function build() {
+					ov = document.createElement('div'); ov.id = 'snp-lb';
+					im = document.createElement('img');
+					var x = document.createElement('div'); x.className = 'snp-x'; x.innerHTML = '&times;';
+					var p = document.createElement('div'); p.className = 'snp-nav snp-prev'; p.innerHTML = '&#8249;';
+					var n = document.createElement('div'); n.className = 'snp-nav snp-next'; n.innerHTML = '&#8250;';
+					ov.appendChild(im); ov.appendChild(x); ov.appendChild(p); ov.appendChild(n);
+					document.body.appendChild(ov);
+					ov.addEventListener('click', function (e) { if (e.target === ov || e.target === x) close(); });
+					p.addEventListener('click', function (e) { e.stopPropagation(); show(idx - 1); });
+					n.addEventListener('click', function (e) { e.stopPropagation(); show(idx + 1); });
+					document.addEventListener('keydown', function (e) {
+						if (!ov.classList.contains('open')) return;
+						if (e.key === 'Escape') close(); if (e.key === 'ArrowLeft') show(idx - 1); if (e.key === 'ArrowRight') show(idx + 1);
+					});
+				}
+				function init() {
+					build();
+					document.addEventListener('click', function (e) {
+						var a = e.target.closest('a[data-elementor-open-lightbox="yes"]');
+						if (a) {
+							var href = a.getAttribute('href') || '';
+							if (/\.(jpe?g|png|webp|gif)/i.test(href)) {
+								e.preventDefault(); e.stopPropagation();
+								collect(); var i = imgs.indexOf(href); if (i < 0) { imgs.push(href); i = imgs.length - 1; } show(i);
+							}
+						}
+					}, true);
+				}
+				if (document.readyState !== 'loading') init(); else document.addEventListener('DOMContentLoaded', init);
+			})();
+	</script>
+	<style id="snp-video-fit">
+		.elementor-background-video-container {
+			position: absolute !important;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100% !important;
+			height: 100% !important;
+			overflow: hidden !important;
+		}
+
+		.elementor-background-video-hosted {
+			position: absolute !important;
+			top: 0;
+			left: 0;
+			width: 100% !important;
+			height: 100% !important;
+			object-fit: cover !important;
+			max-width: none !important;
+		}
+
+		@media (max-width:767px),
+		(orientation:portrait) {
+			.elementor-element-2b4efa3f {
+				min-height: 100vh !important;
+			}
+		}
+	</style>
+</head>
 
 <body
 	class="home page-template-default page page-id-505 wp-embed-responsive jkit-color-scheme theme-default elementor-default elementor-kit-17 elementor-page elementor-page-505">
@@ -849,7 +922,8 @@
 					data-id="2b4efa3f" data-element_type="section" data-e-type="section"
 					data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;\/wp-content\/uploads\/2025\/03\/SALT-N-PEPPER-1-1.mp4&quot;,&quot;background_play_once&quot;:&quot;yes&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;,&quot;background_privacy_mode&quot;:&quot;yes&quot;}">
 					<div class="elementor-background-video-container"><video class="elementor-background-video-hosted"
-							role="presentation" autoplay muted playsinline loop src="/wp-content/uploads/2025/03/SALT-N-PEPPER-1-1.mp4"></video></div>
+							role="presentation" autoplay muted playsinline loop
+							src="/wp-content/uploads/2025/03/SALT-N-PEPPER-1-1.mp4"></video></div>
 					<div class="elementor-background-overlay"></div>
 					<div class="elementor-container elementor-column-gap-default">
 						<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-25dfe11f"
@@ -1802,41 +1876,236 @@
 					}
 				</style>
 				<style id="snp-pdf-menu-style">
-html,body{overflow-x:hidden;max-width:100%;}
-.snp-menu{background:#f1efec;color:#333;font-family:Montserrat,system-ui,sans-serif;padding:60px 16px;width:100%;max-width:100%;box-sizing:border-box;overflow-x:hidden;}
-.snp-menu *{box-sizing:border-box;}
-.snp-inner{max-width:1120px;margin:0 auto;width:100%;}
-.snp-h2{display:none;}
-.snp-sub{display:none;}
-.snp-gender{position:relative;}
-.snp-gender::before{content:"";position:absolute;left:50%;top:90px;transform:translateX(-50%);width:min(540px,88%);height:540px;background:url('/wp-content/uploads/2024/12/cropped-Artboard-2@4x-270x270.png') center/contain no-repeat;opacity:.07;pointer-events:none;z-index:0;}
-.snp-menu .snp-gtitle{position:relative;z-index:1;text-align:center;color:#DD984D!important;font-weight:700;font-size:clamp(30px,8vw,48px);letter-spacing:.06em;margin:40px 0 30px;font-family:'Red Rose',serif;text-transform:uppercase;}
-.snp-grid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(2,1fr);gap:34px 44px;}
-.snp-cat{padding:4px 2px 24px;min-width:0;border-bottom:2px solid #1c1c1c;}
-.snp-cat-head{display:flex;flex-direction:column;align-items:stretch;border-bottom:1px solid rgba(0,0,0,.18);padding-bottom:8px;margin-bottom:8px;gap:6px;}
-.snp-cn{color:#1c1c1c;font-weight:700;font-size:17px;text-align:center;width:100%;}
-.snp-cols{display:flex;gap:20px;align-self:flex-end;}
-.snp-cols span{width:56px;text-align:right;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#777;white-space:nowrap;font-weight:600;}
-.snp-row{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:7px 0;}
-.snp-svc{font-size:14px;color:#2a2a2a;min-width:0;}
-.snp-pr{display:flex;gap:20px;flex:0 0 auto;}
-.snp-pr span{width:56px;text-align:right;font-weight:700;color:#B5683C;font-variant-numeric:tabular-nums;white-space:nowrap;}
-.snp-pr span::before{content:"\20B9";opacity:.6;font-weight:400;margin-right:1px;}
-.snp-note{border:1px solid #B5683C;color:#B5683C;text-align:center;font-size:11px;padding:9px;margin:14px 0 4px;letter-spacing:.06em;text-transform:uppercase;}
-.snp-foot{text-align:center;color:#888;font-size:12px;margin-top:34px;position:relative;z-index:1;}
-@media(max-width:760px){.snp-grid{grid-template-columns:1fr;gap:26px 0;}}
-@media(max-width:600px){
- .snp-menu{padding:44px 14px;}
- .snp-cols{gap:16px;}.snp-pr{gap:16px;}
- .snp-cols span,.snp-pr span{width:50px;font-size:11px;}
- .snp-cn{font-size:15px;}.snp-svc{font-size:13px;}
-}
-@media(max-width:380px){
- .snp-cols{gap:12px;}.snp-pr{gap:12px;}
- .snp-cols span,.snp-pr span{width:44px;font-size:10px;}
- .snp-svc{font-size:12px;}.snp-cn{font-size:14px;}
-}
-</style>
+					html,
+					body {
+						overflow-x: hidden;
+						max-width: 100%;
+					}
+
+					.snp-menu {
+						background: #f1efec;
+						color: #333;
+						font-family: Montserrat, system-ui, sans-serif;
+						padding: 60px 16px;
+						width: 100%;
+						max-width: 100%;
+						box-sizing: border-box;
+						overflow-x: hidden;
+					}
+
+					.snp-menu * {
+						box-sizing: border-box;
+					}
+
+					.snp-inner {
+						max-width: 1120px;
+						margin: 0 auto;
+						width: 100%;
+					}
+
+					.snp-h2 {
+						display: none;
+					}
+
+					.snp-sub {
+						display: none;
+					}
+
+					.snp-gender {
+						position: relative;
+					}
+
+					.snp-gender::before {
+						content: "";
+						position: absolute;
+						left: 50%;
+						top: 90px;
+						transform: translateX(-50%);
+						width: min(540px, 88%);
+						height: 540px;
+						background: url('/wp-content/uploads/2024/12/cropped-Artboard-2@4x-270x270.png') center/contain no-repeat;
+						opacity: .07;
+						pointer-events: none;
+						z-index: 0;
+					}
+
+					.snp-menu .snp-gtitle {
+						position: relative;
+						z-index: 1;
+						text-align: center;
+						color: #DD984D !important;
+						font-weight: 700;
+						font-size: clamp(30px, 8vw, 48px);
+						letter-spacing: .06em;
+						margin: 40px 0 30px;
+						font-family: 'Red Rose', serif;
+						text-transform: uppercase;
+					}
+
+					.snp-grid {
+						position: relative;
+						z-index: 1;
+						display: grid;
+						grid-template-columns: repeat(2, 1fr);
+						gap: 34px 44px;
+					}
+
+					.snp-cat {
+						padding: 4px 2px 24px;
+						min-width: 0;
+						border-bottom: 2px solid #1c1c1c;
+					}
+
+					.snp-cat-head {
+						display: flex;
+						flex-direction: column;
+						align-items: stretch;
+						border-bottom: 1px solid rgba(0, 0, 0, .18);
+						padding-bottom: 8px;
+						margin-bottom: 8px;
+						gap: 6px;
+					}
+
+					.snp-cn {
+						color: #1c1c1c;
+						font-weight: 700;
+						font-size: 17px;
+						text-align: center;
+						width: 100%;
+					}
+
+					.snp-cols {
+						display: flex;
+						gap: 20px;
+						align-self: flex-end;
+					}
+
+					.snp-cols span {
+						width: 56px;
+						text-align: right;
+						font-size: 11px;
+						text-transform: uppercase;
+						letter-spacing: .05em;
+						color: #777;
+						white-space: nowrap;
+						font-weight: 600;
+					}
+
+					.snp-row {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						gap: 18px;
+						padding: 7px 0;
+					}
+
+					.snp-svc {
+						font-size: 14px;
+						color: #2a2a2a;
+						min-width: 0;
+					}
+
+					.snp-pr {
+						display: flex;
+						gap: 20px;
+						flex: 0 0 auto;
+					}
+
+					.snp-pr span {
+						width: 56px;
+						text-align: right;
+						font-weight: 700;
+						color: #B5683C;
+						font-variant-numeric: tabular-nums;
+						white-space: nowrap;
+					}
+
+					.snp-pr span::before {
+						content: "\20B9";
+						opacity: .6;
+						font-weight: 400;
+						margin-right: 1px;
+					}
+
+					.snp-note {
+						border: 1px solid #B5683C;
+						color: #B5683C;
+						text-align: center;
+						font-size: 11px;
+						padding: 9px;
+						margin: 14px 0 4px;
+						letter-spacing: .06em;
+						text-transform: uppercase;
+					}
+
+					.snp-foot {
+						text-align: center;
+						color: #888;
+						font-size: 12px;
+						margin-top: 34px;
+						position: relative;
+						z-index: 1;
+					}
+
+					@media(max-width:760px) {
+						.snp-grid {
+							grid-template-columns: 1fr;
+							gap: 26px 0;
+						}
+					}
+
+					@media(max-width:600px) {
+						.snp-menu {
+							padding: 44px 14px;
+						}
+
+						.snp-cols {
+							gap: 16px;
+						}
+
+						.snp-pr {
+							gap: 16px;
+						}
+
+						.snp-cols span,
+						.snp-pr span {
+							width: 50px;
+							font-size: 11px;
+						}
+
+						.snp-cn {
+							font-size: 15px;
+						}
+
+						.snp-svc {
+							font-size: 13px;
+						}
+					}
+
+					@media(max-width:380px) {
+						.snp-cols {
+							gap: 12px;
+						}
+
+						.snp-pr {
+							gap: 12px;
+						}
+
+						.snp-cols span,
+						.snp-pr span {
+							width: 44px;
+							font-size: 10px;
+						}
+
+						.snp-svc {
+							font-size: 12px;
+						}
+
+						.snp-cn {
+							font-size: 14px;
+						}
+					}
+				</style>
 				<section class="snp-menu">
 					<div class="snp-inner">
 						<h2 class="snp-h2">Our Services</h2>
@@ -4334,96 +4603,300 @@ html,body{overflow-x:hidden;max-width:100%;}
 													data-id="3ec98ffa" data-element_type="widget" data-e-type="widget"
 													data-settings="{&quot;_transform_translateX_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-35,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:122,&quot;sizes&quot;:[]},&quot;_transform_scale_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.3,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_laptop&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-11,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_laptop&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:210,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_laptop&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
 													data-widget_type="image.default">
-													<img srcset="/wp-content/uploads/2025/02/IMG_5392-1-scaled.jpg.webp 1711w, /wp-content/uploads/2025/02/IMG_5392-1-200x300.jpg.webp 200w, /wp-content/uploads/2025/02/IMG_5392-1-684x1024.jpg.webp 684w, /wp-content/uploads/2025/02/IMG_5392-1-768x1149.jpg.webp 768w, /wp-content/uploads/2025/02/IMG_5392-1-1026x1536.jpg.webp 1026w" alt="" /></div></div></div></div></section></div></div></div></section>
-<style>
-.snp-rcontact{background:#1c1c1c;padding:72px 20px;font-family:Montserrat,system-ui,sans-serif;}
-.snp-rcontact .wrap{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 0.8fr 1.15fr;gap:40px;align-items:start;}
-.snp-rcontact .map img{width:100%;height:auto;border-radius:6px;display:block;}
-@media(max-width:980px){.snp-rcontact .wrap{grid-template-columns:1fr 1fr;}.snp-rcontact .map{grid-column:1 / -1;}}
-.snp-rcontact .eyebrow{color:#CE9C6B;letter-spacing:.25em;text-transform:uppercase;font-size:12px;font-weight:600;margin:0 0 10px;}
-.snp-rcontact h2{font-family:'Red Rose',Montserrat,serif;color:#F6F6F9;font-size:clamp(34px,6vw,46px);margin:0 0 24px;}
-.snp-rcontact p{color:#cfc9c1;line-height:1.7;margin:0 0 4px;}
-.snp-rcontact .lbl{color:#8a8278;font-size:12px;margin:0 0 18px;}
-.snp-rcontact a.val{color:#F6F6F9;font-weight:600;text-decoration:none;}
-.snp-rcontact .social{display:flex;gap:12px;margin-top:8px;}
-.snp-rcontact .social a{border:1px solid #B5683C;color:#CE9C6B;padding:9px 22px;text-decoration:none;font-size:12px;letter-spacing:.12em;text-transform:uppercase;}
-.snp-rhours{width:100%;border-collapse:collapse;color:#cfc9c1;}
-.snp-rhours td{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.06);}
-.snp-rhours td:first-child{font-weight:700;color:#F6F6F9;}
-.snp-rhours td:last-child{text-align:right;}
-.snp-rfooter{background:#0e0d0c;padding:48px 20px;text-align:center;font-family:Montserrat,system-ui,sans-serif;}
-.snp-rfooter img{height:58px;width:auto;margin:0 auto 24px;display:block;}
-.snp-rfooter nav{display:flex;flex-wrap:wrap;gap:26px;justify-content:center;margin-bottom:24px;}
-.snp-rfooter nav a{color:#cfc9c1;text-decoration:none;font-size:15px;}
-.snp-rfooter nav a.home{color:#E08A3C;}
-.snp-rfooter .credit{color:#ffffff;font-size:13px;margin:0;font-family:Nunito,Montserrat,sans-serif;}
-.snp-rfooter .credit a{color:#0177d9;text-decoration:none;font-weight:700;}
-@media(max-width:760px){.snp-rcontact .wrap{grid-template-columns:1fr;gap:34px;}}
-</style>
-<section class="snp-rcontact">
-  <div class="wrap">
-    <div>
-      <p class="eyebrow">&#9670; Contact Us</p>
-      <h2>Ahmedabad</h2>
-      <p style="max-width:380px;">Ground Floor - 03, H R Exter, opp. Shiva's Dosa, nr. New Mahalaxmi Cross Road, Paldi, Ahmedabad, Gujarat 380006</p>
-      <p class="lbl">Our Salon</p>
-      <p><a class="val" href="tel:08200393180">08200393180</a></p>
-      <p class="lbl">Customer Care</p>
-      <p><a class="val" href="mailto:saltnpeppersalon@gmail.com">saltnpeppersalon@gmail.com</a></p>
-      <p class="lbl">Book Appoinment</p>
-      <div class="social">
-        <a href="https://www.facebook.com/share/15GX4wy9vF/" target="_blank" rel="noreferrer">Facebook</a>
-        <a href="https://www.instagram.com/salonsaltnpepper?igsh=MTZ4ZzFiODlkNjZpOA==" target="_blank" rel="noreferrer">Instagram</a>
-      </div>
-    </div>
-    <div>
-      <table class="snp-rhours">
-        <tbody>
-          <tr><td>Mon:</td><td>10 am &#8211; 09 pm</td></tr>
-          <tr><td>Tues:</td><td>10 am &#8211; 09 pm</td></tr>
-          <tr><td>Wed:</td><td>10 am &#8211; 09 pm</td></tr>
-          <tr><td>Thurs:</td><td>10 am &#8211; 09 pm</td></tr>
-          <tr><td>Fri:</td><td>10 am &#8211; 09 pm</td></tr>
-          <tr><td>Sat:</td><td>10 am &#8211; 09 pm</td></tr>
-          <tr><td>Sun:</td><td>10 am &#8211; 09 pm</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="map"><a href="https://maps.app.goo.gl/rFjbzP3bJ6AoGbDF7" target="_blank" rel="noreferrer"><img src="/wp-content/uploads/2024/12/hectorjpg-013.jpg" alt="Map" /></a></div>
-  </div>
-</section>
-<div class="ekit-template-content-markup ekit-template-content-footer ekit-template-content-theme-support">
-<div data-elementor-type="wp-post" data-elementor-id="214" class="elementor elementor-214" data-elementor-post-type="elementskit_template">
-<div class="elementor-element elementor-element-83b8b5c e-con-full e-flex e-con e-parent" data-id="83b8b5c" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-element elementor-element-b4e1dfb e-flex e-con-boxed e-con e-child" data-id="b4e1dfb" data-element_type="container">
-<div class="e-con-inner">
-<div class="elementor-element elementor-element-bfd906a elementor-widget elementor-widget-image" data-id="bfd906a" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img src="/wp-content/uploads/2024/12/Saloon.png" class="attachment-full size-full wp-image-202" alt="" decoding="async" />
-</div>
-</div>
-<div class="elementor-element elementor-element-316f12f elementor-nav-menu__align-center elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="316f12f" data-element_type="widget" data-widget_type="nav-menu.default">
-<div class="elementor-widget-container">
-<nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
-<ul id="menu-1-316f12f" class="elementor-nav-menu">
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-554"><a target="_top" href="/" class="elementor-item elementor-item-active">Home</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-553"><a target="_top" href="/about-us" class="elementor-item">About Us</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552"><a target="_top" href="/services" class="elementor-item">Services</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-550"><a target="_top" href="/teams" class="elementor-item">Teams</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1555"><a target="_top" href="/gallery" class="elementor-item">Gallery</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-551"><a target="_top" href="/contact-us" class="elementor-item">Contact Us</a></li>
-</ul>
-</nav>
-</div>
-</div>
-<div class="elementor-element elementor-element-237909b elementor-widget elementor-widget-text-editor" data-id="237909b" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p style="font-family: Nunito,sans-serif;">&#169;2026 | Salt N Pepper | Develop by  by  <a class="popup-link" style="position: relative; color: #0177d9; text-decoration: none;" href="https://uminber.com/"><b>Uminber Designs</b></a> </p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div></body></html>
+													<img srcset="/wp-content/uploads/2025/02/IMG_5392-1-scaled.jpg.webp 1711w, /wp-content/uploads/2025/02/IMG_5392-1-200x300.jpg.webp 200w, /wp-content/uploads/2025/02/IMG_5392-1-684x1024.jpg.webp 684w, /wp-content/uploads/2025/02/IMG_5392-1-768x1149.jpg.webp 768w, /wp-content/uploads/2025/02/IMG_5392-1-1026x1536.jpg.webp 1026w"
+														alt="" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+				<style>
+					.snp-rcontact {
+						background: #1c1c1c;
+						padding: 72px 20px;
+						font-family: Montserrat, system-ui, sans-serif;
+					}
+
+					.snp-rcontact .wrap {
+						max-width: 1240px;
+						margin: 0 auto;
+						display: grid;
+						grid-template-columns: 1fr 0.8fr 1.15fr;
+						gap: 40px;
+						align-items: start;
+					}
+
+					.snp-rcontact .map img {
+						width: 100%;
+						height: auto;
+						border-radius: 6px;
+						display: block;
+					}
+
+					@media(max-width:980px) {
+						.snp-rcontact .wrap {
+							grid-template-columns: 1fr 1fr;
+						}
+
+						.snp-rcontact .map {
+							grid-column: 1 / -1;
+						}
+					}
+
+					.snp-rcontact .eyebrow {
+						color: #CE9C6B;
+						letter-spacing: .25em;
+						text-transform: uppercase;
+						font-size: 12px;
+						font-weight: 600;
+						margin: 0 0 10px;
+					}
+
+					.snp-rcontact h2 {
+						font-family: 'Red Rose', Montserrat, serif;
+						color: #F6F6F9;
+						font-size: clamp(34px, 6vw, 46px);
+						margin: 0 0 24px;
+					}
+
+					.snp-rcontact p {
+						color: #cfc9c1;
+						line-height: 1.7;
+						margin: 0 0 4px;
+					}
+
+					.snp-rcontact .lbl {
+						color: #8a8278;
+						font-size: 12px;
+						margin: 0 0 18px;
+					}
+
+					.snp-rcontact a.val {
+						color: #F6F6F9;
+						font-weight: 600;
+						text-decoration: none;
+					}
+
+					.snp-rcontact .social {
+						display: flex;
+						gap: 12px;
+						margin-top: 8px;
+					}
+
+					.snp-rcontact .social a {
+						border: 1px solid #B5683C;
+						color: #CE9C6B;
+						padding: 9px 22px;
+						text-decoration: none;
+						font-size: 12px;
+						letter-spacing: .12em;
+						text-transform: uppercase;
+					}
+
+					.snp-rhours {
+						width: 100%;
+						border-collapse: collapse;
+						color: #cfc9c1;
+					}
+
+					.snp-rhours td {
+						padding: 9px 0;
+						border-bottom: 1px solid rgba(255, 255, 255, .06);
+					}
+
+					.snp-rhours td:first-child {
+						font-weight: 700;
+						color: #F6F6F9;
+					}
+
+					.snp-rhours td:last-child {
+						text-align: right;
+					}
+
+					.snp-rfooter {
+						background: #0e0d0c;
+						padding: 48px 20px;
+						text-align: center;
+						font-family: Montserrat, system-ui, sans-serif;
+					}
+
+					.snp-rfooter img {
+						height: 58px;
+						width: auto;
+						margin: 0 auto 24px;
+						display: block;
+					}
+
+					.snp-rfooter nav {
+						display: flex;
+						flex-wrap: wrap;
+						gap: 26px;
+						justify-content: center;
+						margin-bottom: 24px;
+					}
+
+					.snp-rfooter nav a {
+						color: #cfc9c1;
+						text-decoration: none;
+						font-size: 15px;
+					}
+
+					.snp-rfooter nav a.home {
+						color: #E08A3C;
+					}
+
+					.snp-rfooter .credit {
+						color: #ffffff;
+						font-size: 13px;
+						margin: 0;
+						font-family: Nunito, Montserrat, sans-serif;
+					}
+
+					.snp-rfooter .credit a {
+						color: #0177d9;
+						text-decoration: none;
+						font-weight: 700;
+					}
+
+					@media(max-width:760px) {
+						.snp-rcontact .wrap {
+							grid-template-columns: 1fr;
+							gap: 34px;
+						}
+					}
+				</style>
+				<section class="snp-rcontact">
+					<div class="wrap">
+						<div>
+							<p class="eyebrow">&#9670; Contact Us</p>
+							<h2>Ahmedabad</h2>
+							<p style="max-width:380px;">Ground Floor - 03, H R Exter, opp. Shiva's Dosa, nr. New
+								Mahalaxmi Cross Road, Paldi, Ahmedabad, Gujarat 380006</p>
+							<p class="lbl">Our Salon</p>
+							<p><a class="val" href="tel:08200393180">08200393180</a></p>
+							<p class="lbl">Customer Care</p>
+							<p><a class="val" href="mailto:saltnpeppersalon@gmail.com">saltnpeppersalon@gmail.com</a>
+							</p>
+							<p class="lbl">Book Appoinment</p>
+							<div class="social">
+								<a href="https://www.facebook.com/share/15GX4wy9vF/" target="_blank"
+									rel="noreferrer">Facebook</a>
+								<a href="https://www.instagram.com/salonsaltnpepper?igsh=MTZ4ZzFiODlkNjZpOA=="
+									target="_blank" rel="noreferrer">Instagram</a>
+							</div>
+						</div>
+						<div>
+							<table class="snp-rhours">
+								<tbody>
+									<tr>
+										<td>Mon:</td>
+										<td>10 am &#8211; 09 pm</td>
+									</tr>
+									<tr>
+										<td>Tues:</td>
+										<td>10 am &#8211; 09 pm</td>
+									</tr>
+									<tr>
+										<td>Wed:</td>
+										<td>10 am &#8211; 09 pm</td>
+									</tr>
+									<tr>
+										<td>Thurs:</td>
+										<td>10 am &#8211; 09 pm</td>
+									</tr>
+									<tr>
+										<td>Fri:</td>
+										<td>10 am &#8211; 09 pm</td>
+									</tr>
+									<tr>
+										<td>Sat:</td>
+										<td>10 am &#8211; 09 pm</td>
+									</tr>
+									<tr>
+										<td>Sun:</td>
+										<td>10 am &#8211; 09 pm</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="map"><a href="https://maps.app.goo.gl/rFjbzP3bJ6AoGbDF7" target="_blank"
+								rel="noreferrer"><img src="/wp-content/uploads/2024/12/hectorjpg-013.jpg"
+									alt="Map" /></a></div>
+					</div>
+				</section>
+				<div
+					class="ekit-template-content-markup ekit-template-content-footer ekit-template-content-theme-support">
+					<div data-elementor-type="wp-post" data-elementor-id="214" class="elementor elementor-214"
+						data-elementor-post-type="elementskit_template">
+						<div class="elementor-element elementor-element-83b8b5c e-con-full e-flex e-con e-parent"
+							data-id="83b8b5c" data-element_type="container"
+							data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-element elementor-element-b4e1dfb e-flex e-con-boxed e-con e-child"
+								data-id="b4e1dfb" data-element_type="container">
+								<div class="e-con-inner">
+									<div class="elementor-element elementor-element-bfd906a elementor-widget elementor-widget-image"
+										data-id="bfd906a" data-element_type="widget" data-widget_type="image.default">
+										<div class="elementor-widget-container">
+											<img src="/wp-content/uploads/2024/12/Saloon.png"
+												class="attachment-full size-full wp-image-202" alt=""
+												decoding="async" />
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-316f12f elementor-nav-menu__align-center elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu"
+										data-id="316f12f" data-element_type="widget"
+										data-widget_type="nav-menu.default">
+										<div class="elementor-widget-container">
+											<nav
+												class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+												<ul id="menu-1-316f12f" class="elementor-nav-menu">
+													<li
+														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-554">
+														<a target="_top" href="/"
+															class="elementor-item elementor-item-active">Home</a></li>
+													<li
+														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-553">
+														<a target="_top" href="/about-us" class="elementor-item">About
+															Us</a></li>
+													<li
+														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552">
+														<a target="_top" href="/services"
+															class="elementor-item">Services</a></li>
+													<li
+														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-550">
+														<a target="_top" href="/teams" class="elementor-item">Teams</a>
+													</li>
+													<li
+														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1555">
+														<a target="_top" href="/gallery"
+															class="elementor-item">Gallery</a></li>
+													<li
+														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-551">
+														<a target="_top" href="/contact-us"
+															class="elementor-item">Contact Us</a></li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-237909b elementor-widget elementor-widget-text-editor"
+										data-id="237909b" data-element_type="widget"
+										data-widget_type="text-editor.default">
+										<div class="elementor-widget-container">
+											<p style="font-family: Nunito,sans-serif;">&#169;2026 | Salt N Pepper |
+												Develop by <a class="popup-link"
+													style="position: relative; color: #0177d9; text-decoration: none;"
+													href="https://uminber.com/"><b>Uminber Designs</b></a> </p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+</body>
+
+</html>
