@@ -644,6 +644,20 @@
 			}
 		}
 	</style>
+<style id="snp-mfix">
+.ekit-template-content-footer .elementor-element-83b8b5c{display:flex!important;}
+.ekit-template-content-footer .elementor-element-6801b9e{display:none!important;}
+.ekit-sidebar-group.ekit_isActive{visibility:visible!important;opacity:1!important;}
+</style>
+<script id="snp-mfix-js">
+(function(){
+function tog(open){document.querySelectorAll('.ekit-sidebar-group').forEach(function(s){s.classList[open?'add':'remove']('ekit_isActive');});document.body.style.overflow=open?'hidden':'';}
+document.addEventListener('click',function(e){
+  if(e.target.closest('.ekit_navSidebar-button')){e.preventDefault();e.stopPropagation();tog(true);return;}
+  if(e.target.closest('.ekit_close-side-widget')||(e.target.classList&&e.target.classList.contains('ekit-overlay'))){e.preventDefault();tog(false);}
+},true);
+})();
+</script>
 </head>
 
 <body
