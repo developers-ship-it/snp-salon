@@ -1,0 +1,2430 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<script
+		data-no-optimize="1">var litespeed_docref = sessionStorage.getItem("litespeed_docref"); litespeed_docref && (Object.defineProperty(document, "referrer", { get: function () { return litespeed_docref } }), sessionStorage.removeItem("litespeed_docref"));</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Services &#8211; Salt &#039;N&#039; Pepper</title>
+	<meta name='robots' content='max-image-preview:large' />
+	<style>
+		img:is([sizes="auto" i], [sizes^="auto," i]) {
+			contain-intrinsic-size: 3000px 1500px
+		}
+	</style>
+	<link rel="alternate" type="application/rss+xml" title="Salt &#039;N&#039; Pepper &raquo; Feed" href="/feed/" />
+	<link rel="alternate" type="application/rss+xml" title="Salt &#039;N&#039; Pepper &raquo; Comments Feed"
+		href="/comments/feed/" />
+	<link data-optimized="2" rel="stylesheet"
+		href="/wp-content/litespeed/css/cb9c6b91460bb80a1298764eaf393203.css?ver=5dbd0" />
+	<style id='global-styles-inline-css'>
+		:root {
+			--wp--preset--aspect-ratio--square: 1;
+			--wp--preset--aspect-ratio--4-3: 4/3;
+			--wp--preset--aspect-ratio--3-4: 3/4;
+			--wp--preset--aspect-ratio--3-2: 3/2;
+			--wp--preset--aspect-ratio--2-3: 2/3;
+			--wp--preset--aspect-ratio--16-9: 16/9;
+			--wp--preset--aspect-ratio--9-16: 9/16;
+			--wp--preset--color--black: #000000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #ffffff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #cf2e2e;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+			--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+			--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+			--wp--preset--font-size--small: 13px;
+			--wp--preset--font-size--medium: 20px;
+			--wp--preset--font-size--large: 36px;
+			--wp--preset--font-size--x-large: 42px;
+			--wp--preset--spacing--20: 0.44rem;
+			--wp--preset--spacing--30: 0.67rem;
+			--wp--preset--spacing--40: 1rem;
+			--wp--preset--spacing--50: 1.5rem;
+			--wp--preset--spacing--60: 2.25rem;
+			--wp--preset--spacing--70: 3.38rem;
+			--wp--preset--spacing--80: 5.06rem;
+			--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+			--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+			--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+		}
+
+		:root {
+			--wp--style--global--content-size: 800px;
+			--wp--style--global--wide-size: 1200px;
+		}
+
+		:where(body) {
+			margin: 0;
+		}
+
+		.wp-site-blocks>.alignleft {
+			float: left;
+			margin-right: 2em;
+		}
+
+		.wp-site-blocks>.alignright {
+			float: right;
+			margin-left: 2em;
+		}
+
+		.wp-site-blocks>.aligncenter {
+			justify-content: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		:where(.wp-site-blocks)>* {
+			margin-block-start: 24px;
+			margin-block-end: 0;
+		}
+
+		:where(.wp-site-blocks)> :first-child {
+			margin-block-start: 0;
+		}
+
+		:where(.wp-site-blocks)> :last-child {
+			margin-block-end: 0;
+		}
+
+		:root {
+			--wp--style--block-gap: 24px;
+		}
+
+		:root :where(.is-layout-flow)> :first-child {
+			margin-block-start: 0;
+		}
+
+		:root :where(.is-layout-flow)> :last-child {
+			margin-block-end: 0;
+		}
+
+		:root :where(.is-layout-flow)>* {
+			margin-block-start: 24px;
+			margin-block-end: 0;
+		}
+
+		:root :where(.is-layout-constrained)> :first-child {
+			margin-block-start: 0;
+		}
+
+		:root :where(.is-layout-constrained)> :last-child {
+			margin-block-end: 0;
+		}
+
+		:root :where(.is-layout-constrained)>* {
+			margin-block-start: 24px;
+			margin-block-end: 0;
+		}
+
+		:root :where(.is-layout-flex) {
+			gap: 24px;
+		}
+
+		:root :where(.is-layout-grid) {
+			gap: 24px;
+		}
+
+		.is-layout-flow>.alignleft {
+			float: left;
+			margin-inline-start: 0;
+			margin-inline-end: 2em;
+		}
+
+		.is-layout-flow>.alignright {
+			float: right;
+			margin-inline-start: 2em;
+			margin-inline-end: 0;
+		}
+
+		.is-layout-flow>.aligncenter {
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+
+		.is-layout-constrained>.alignleft {
+			float: left;
+			margin-inline-start: 0;
+			margin-inline-end: 2em;
+		}
+
+		.is-layout-constrained>.alignright {
+			float: right;
+			margin-inline-start: 2em;
+			margin-inline-end: 0;
+		}
+
+		.is-layout-constrained>.aligncenter {
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+
+		.is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+			max-width: var(--wp--style--global--content-size);
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+
+		.is-layout-constrained>.alignwide {
+			max-width: var(--wp--style--global--wide-size);
+		}
+
+		body .is-layout-flex {
+			display: flex;
+		}
+
+		.is-layout-flex {
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		.is-layout-flex> :is(*, div) {
+			margin: 0;
+		}
+
+		body .is-layout-grid {
+			display: grid;
+		}
+
+		.is-layout-grid> :is(*, div) {
+			margin: 0;
+		}
+
+		body {
+			padding-top: 0px;
+			padding-right: 0px;
+			padding-bottom: 0px;
+			padding-left: 0px;
+		}
+
+		a:where(:not(.wp-element-button)) {
+			text-decoration: underline;
+		}
+
+		:root :where(.wp-element-button, .wp-block-button__link) {
+			background-color: #32373c;
+			border-width: 0;
+			color: #fff;
+			font-family: inherit;
+			font-size: inherit;
+			line-height: inherit;
+			padding: calc(0.667em + 2px) calc(1.333em + 2px);
+			text-decoration: none;
+		}
+
+		.has-black-color {
+			color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-color {
+			color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-color {
+			color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-color {
+			color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-color {
+			color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-color {
+			color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-color {
+			color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-color {
+			color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-color {
+			color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-color {
+			color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-color {
+			color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-color {
+			color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-background-color {
+			background-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-background-color {
+			background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-background-color {
+			background-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-background-color {
+			background-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-background-color {
+			background-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-background-color {
+			background-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-background-color {
+			background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-background-color {
+			background-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-border-color {
+			border-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-border-color {
+			border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-border-color {
+			border-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-border-color {
+			border-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-border-color {
+			border-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-border-color {
+			border-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-border-color {
+			border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-border-color {
+			border-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+			background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+		}
+
+		.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+			background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+		}
+
+		.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+		}
+
+		.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+			background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+		}
+
+		.has-cool-to-warm-spectrum-gradient-background {
+			background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+		}
+
+		.has-blush-light-purple-gradient-background {
+			background: var(--wp--preset--gradient--blush-light-purple) !important;
+		}
+
+		.has-blush-bordeaux-gradient-background {
+			background: var(--wp--preset--gradient--blush-bordeaux) !important;
+		}
+
+		.has-luminous-dusk-gradient-background {
+			background: var(--wp--preset--gradient--luminous-dusk) !important;
+		}
+
+		.has-pale-ocean-gradient-background {
+			background: var(--wp--preset--gradient--pale-ocean) !important;
+		}
+
+		.has-electric-grass-gradient-background {
+			background: var(--wp--preset--gradient--electric-grass) !important;
+		}
+
+		.has-midnight-gradient-background {
+			background: var(--wp--preset--gradient--midnight) !important;
+		}
+
+		.has-small-font-size {
+			font-size: var(--wp--preset--font-size--small) !important;
+		}
+
+		.has-medium-font-size {
+			font-size: var(--wp--preset--font-size--medium) !important;
+		}
+
+		.has-large-font-size {
+			font-size: var(--wp--preset--font-size--large) !important;
+		}
+
+		.has-x-large-font-size {
+			font-size: var(--wp--preset--font-size--x-large) !important;
+		}
+
+		:root :where(.wp-block-pullquote) {
+			font-size: 1.5em;
+			line-height: 1.6;
+		}
+	</style>
+	<script>var elementskit = { resturl: '/wp-json/elementskit/v1/', }</script>
+	<script src="/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+	<link rel="https://api.w.org/" href="/wp-json/" />
+	<link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/pages/521" />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+	<meta name="generator" content="WordPress 6.7.5" />
+	<link rel="canonical" href="/services/" />
+	<link rel='shortlink' href='/?p=521' />
+	<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
+		href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsnpsalon.in%2Fservices%2F" />
+	<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
+		href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsnpsalon.in%2Fservices%2F&#038;format=xml" />
+	<meta name="generator"
+		content="Elementor 4.0.5; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+	<style>
+		.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+		.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+			background-image: none !important;
+		}
+
+		@media screen and (max-height: 1024px) {
+
+			.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+			.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+				background-image: none !important;
+			}
+		}
+
+		@media screen and (max-height: 640px) {
+
+			.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+			.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+				background-image: none !important;
+			}
+		}
+	</style>
+	<link rel="icon" href="/wp-content/uploads/2024/12/cropped-Artboard-2@4x-32x32.png" sizes="32x32" />
+	<link rel="icon" href="/wp-content/uploads/2024/12/cropped-Artboard-2@4x-192x192.png" sizes="192x192" />
+	<link rel="apple-touch-icon" href="/wp-content/uploads/2024/12/cropped-Artboard-2@4x-180x180.png" />
+	<meta name="msapplication-TileImage" content="/wp-content/uploads/2024/12/cropped-Artboard-2@4x-270x270.png" />
+	<style id="wp-custom-css">
+		.page-header .entry-title {
+			display: none !important;
+		}
+
+		.elementor-widget-elementskit-business-hours .elementor-widget-container,
+		.elementor-widget-elementskit-business-hours.elementor-element:not(:has(.elementor-widget-container)) {
+			background-color: rgba(28, 28, 28, 1) !important;
+		}
+
+		.elementor-214 .elementor-element.elementor-element-f6baef3 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item::marker {
+			display: none !important;
+		}
+	</style>
+	<style id="clone-visibility-fix">
+		.elementor-invisible {
+			visibility: visible !important;
+			opacity: 1 !important;
+			animation: none !important;
+		}
+
+		.elementor-widget,
+		.elementor-section,
+		.elementor-column,
+		.e-con,
+		.e-con-inner {
+			opacity: 1 !important;
+		}
+
+		[data-settings*="animation"] {
+			opacity: 1 !important;
+			visibility: visible !important;
+		}
+	</style>
+<style id="snp-lb-css">
+#snp-lb{position:fixed;inset:0;z-index:999999;background:rgba(0,0,0,.93);display:none;align-items:center;justify-content:center;cursor:zoom-out}
+#snp-lb.open{display:flex}
+#snp-lb img{max-width:92vw;max-height:92vh;border-radius:8px;box-shadow:0 12px 50px rgba(0,0,0,.7)}
+#snp-lb .snp-x{position:absolute;top:16px;right:26px;color:#fff;font-size:42px;line-height:1;cursor:pointer;font-family:sans-serif}
+#snp-lb .snp-nav{position:absolute;top:50%;transform:translateY(-50%);color:#fff;font-size:46px;cursor:pointer;user-select:none;padding:0 22px;opacity:.85}
+#snp-lb .snp-prev{left:6px}#snp-lb .snp-next{right:6px}
+</style>
+<script id="snp-lb-js">
+(function(){
+  var imgs=[],idx=0,ov,im;
+  function collect(){
+    imgs=[].slice.call(document.querySelectorAll('a[data-elementor-open-lightbox="yes"][href]'))
+      .map(function(a){return a.getAttribute('href');})
+      .filter(function(h){return /\.(jpe?g|png|webp|gif)/i.test(h);});
+  }
+  function show(i){ if(!imgs.length)return; idx=(i+imgs.length)%imgs.length; im.src=imgs[idx]; ov.classList.add('open'); }
+  function close(){ ov.classList.remove('open'); }
+  function build(){
+    ov=document.createElement('div'); ov.id='snp-lb';
+    im=document.createElement('img');
+    var x=document.createElement('div'); x.className='snp-x'; x.innerHTML='&times;';
+    var p=document.createElement('div'); p.className='snp-nav snp-prev'; p.innerHTML='&#8249;';
+    var n=document.createElement('div'); n.className='snp-nav snp-next'; n.innerHTML='&#8250;';
+    ov.appendChild(im); ov.appendChild(x); ov.appendChild(p); ov.appendChild(n);
+    document.body.appendChild(ov);
+    ov.addEventListener('click',function(e){ if(e.target===ov||e.target===x) close(); });
+    p.addEventListener('click',function(e){ e.stopPropagation(); show(idx-1); });
+    n.addEventListener('click',function(e){ e.stopPropagation(); show(idx+1); });
+    document.addEventListener('keydown',function(e){ if(!ov.classList.contains('open'))return;
+      if(e.key==='Escape')close(); if(e.key==='ArrowLeft')show(idx-1); if(e.key==='ArrowRight')show(idx+1); });
+  }
+  function init(){
+    build();
+    document.addEventListener('click',function(e){
+      var a=e.target.closest('a[data-elementor-open-lightbox="yes"]');
+      if(a){ var href=a.getAttribute('href')||'';
+        if(/\.(jpe?g|png|webp|gif)/i.test(href)){
+          e.preventDefault(); e.stopPropagation();
+          collect(); var i=imgs.indexOf(href); if(i<0){imgs.push(href);i=imgs.length-1;} show(i);
+        }
+      }
+    },true);
+  }
+  if(document.readyState!=='loading') init(); else document.addEventListener('DOMContentLoaded',init);
+})();
+</script></head>
+
+<body
+	class="page-template page-template-elementor_header_footer page page-id-521 wp-embed-responsive jkit-color-scheme theme-default elementor-default elementor-template-full-width elementor-kit-17 elementor-page elementor-page-521">
+	<a class="skip-link screen-reader-text" href="#content">
+		Skip to content </a>
+	<div class="ekit-template-content-markup ekit-template-content-header ekit-template-content-theme-support">
+		<div data-elementor-type="wp-post" data-elementor-id="209" class="elementor elementor-209"
+			data-elementor-post-type="elementskit_template">
+			<div class="elementor-element elementor-element-b762176 elementor-hidden-tablet elementor-hidden-mobile e-con-full e-flex e-con e-parent"
+				data-id="b762176" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-ecae008 e-con-full e-flex e-con e-child"
+					data-id="ecae008" data-element_type="container" data-e-type="container">
+					<div class="elementor-element elementor-element-9487059 elementor-widget elementor-widget-image"
+						data-id="9487059" data-element_type="widget" data-e-type="widget"
+						data-widget_type="image.default">
+						<a target="_top" href="/">
+							<img srcset="/wp-content/uploads/2024/12/Saloon.png.webp 3152w, /wp-content/uploads/2024/12/Saloon-300x57.png.webp 300w, /wp-content/uploads/2024/12/Saloon-1024x196.png.webp 1024w, /wp-content/uploads/2024/12/Saloon-768x147.png.webp 768w, /wp-content/uploads/2024/12/Saloon-1536x293.png.webp 1536w, /wp-content/uploads/2024/12/Saloon-2048x391.png.webp 2048w"
+								src="/wp-content/uploads/2024/12/Saloon.png" fetchpriority="high" width="3152"
+								height="602" data-src="/wp-content/uploads/2024/12/Saloon.png"
+								class="attachment-full size-full wp-image-202" alt="" decoding="async"
+								data-srcset="/wp-content/uploads/2024/12/Saloon.png.webp 3152w, /wp-content/uploads/2024/12/Saloon-300x57.png.webp 300w, /wp-content/uploads/2024/12/Saloon-1024x196.png.webp 1024w, /wp-content/uploads/2024/12/Saloon-768x147.png.webp 768w, /wp-content/uploads/2024/12/Saloon-1536x293.png.webp 1536w, /wp-content/uploads/2024/12/Saloon-2048x391.png.webp 2048w"
+								data-sizes="(max-width: 3152px) 100vw, 3152px" /> </a>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-8875d1e e-con-full e-flex e-con e-child"
+					data-id="8875d1e" data-element_type="container" data-e-type="container">
+					<div class="elementor-element elementor-element-78e49cc elementor-nav-menu__align-center elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu"
+						data-id="78e49cc" data-element_type="widget" data-e-type="widget"
+						data-settings="{&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot; viewBox=\&quot;0 0 320 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}"
+						data-widget_type="nav-menu.default">
+						<div class="elementor-widget-container">
+							<nav
+								class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+								<ul id="menu-1-78e49cc" class="elementor-nav-menu">
+									<li
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-554">
+										<a target="_top" href="/" class="elementor-item">Home</a>
+									</li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-553">
+										<a target="_top" href="/about-us" class="elementor-item">About Us</a>
+									</li>
+									<li
+										class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-521 current_page_item menu-item-552">
+										<a target="_top" href="/services" aria-current="page"
+											class="elementor-item elementor-item-active">Services</a>
+									</li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-550">
+										<a target="_top" href="/teams" class="elementor-item">Teams</a>
+									</li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1555">
+										<a target="_top" href="/gallery" class="elementor-item">Gallery</a>
+									</li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-551">
+										<a target="_top" href="/contact-us" class="elementor-item">Contact Us</a>
+									</li>
+								</ul>
+							</nav>
+							<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+								<ul id="menu-2-78e49cc" class="elementor-nav-menu">
+									<li
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-554">
+										<a target="_top" href="/" class="elementor-item" tabindex="-1">Home</a>
+									</li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-553">
+										<a target="_top" href="/about-us" class="elementor-item" tabindex="-1">About
+											Us</a>
+									</li>
+									<li
+										class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-521 current_page_item menu-item-552">
+										<a target="_top" href="/services" aria-current="page"
+											class="elementor-item elementor-item-active" tabindex="-1">Services</a>
+									</li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-550">
+										<a target="_top" href="/teams" class="elementor-item" tabindex="-1">Teams</a>
+									</li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1555">
+										<a target="_top" href="/gallery" class="elementor-item"
+											tabindex="-1">Gallery</a>
+									</li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-551">
+										<a target="_top" href="/contact-us" class="elementor-item" tabindex="-1">Contact
+											Us</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-555f574 e-con-full e-flex e-con e-child"
+					data-id="555f574" data-element_type="container" data-e-type="container">
+					<div class="elementor-element elementor-element-f72841b elementor-align-right elementor-widget-laptop__width-initial elementor-widget elementor-widget-button"
+						data-id="f72841b" data-element_type="widget" data-e-type="widget"
+						data-widget_type="button.default">
+						<a class="elementor-button elementor-button-link elementor-size-sm" href="tel:08200393180">
+							<span class="elementor-button-content-wrapper">
+								<span class="elementor-button-text">book now</span>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="elementor-element elementor-element-ba7be3a e-con-full elementor-hidden-desktop elementor-hidden-laptop e-flex e-con e-parent"
+				data-id="ba7be3a" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-44b6e7d e-con-full e-flex e-con e-child"
+					data-id="44b6e7d" data-element_type="container" data-e-type="container">
+					<div class="elementor-element elementor-element-ac82aa5 e-con-full e-flex e-con e-child"
+						data-id="ac82aa5" data-element_type="container" data-e-type="container">
+						<div class="elementor-element elementor-element-117b817 e-con-full e-flex e-con e-child"
+							data-id="117b817" data-element_type="container" data-e-type="container">
+							<div class="elementor-element elementor-element-0413fe2 elementor-widget elementor-widget-image"
+								data-id="0413fe2" data-element_type="widget" data-e-type="widget"
+								data-widget_type="image.default">
+								<a target="_top" href="/">
+									<img srcset="/wp-content/uploads/2024/12/Saloon.png.webp 3152w, /wp-content/uploads/2024/12/Saloon-300x57.png.webp 300w, /wp-content/uploads/2024/12/Saloon-1024x196.png.webp 1024w, /wp-content/uploads/2024/12/Saloon-768x147.png.webp 768w, /wp-content/uploads/2024/12/Saloon-1536x293.png.webp 1536w, /wp-content/uploads/2024/12/Saloon-2048x391.png.webp 2048w"
+										src="/wp-content/uploads/2024/12/Saloon.png" fetchpriority="high" width="3152"
+										height="602" data-src="/wp-content/uploads/2024/12/Saloon.png"
+										class="attachment-full size-full wp-image-202" alt="" decoding="async"
+										data-srcset="/wp-content/uploads/2024/12/Saloon.png.webp 3152w, /wp-content/uploads/2024/12/Saloon-300x57.png.webp 300w, /wp-content/uploads/2024/12/Saloon-1024x196.png.webp 1024w, /wp-content/uploads/2024/12/Saloon-768x147.png.webp 768w, /wp-content/uploads/2024/12/Saloon-1536x293.png.webp 1536w, /wp-content/uploads/2024/12/Saloon-2048x391.png.webp 2048w"
+										data-sizes="(max-width: 3152px) 100vw, 3152px" /> </a>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-9324b80 e-con-full e-flex e-con e-child"
+							data-id="9324b80" data-element_type="container" data-e-type="container">
+							<div class="elementor-element elementor-element-604fc6e ekit-off-canvas-position-right elementor-widget elementor-widget-elementskit-header-offcanvas"
+								data-id="604fc6e" data-element_type="widget" data-e-type="widget"
+								data-widget_type="elementskit-header-offcanvas.default">
+								<div class="ekit-wid-con">
+									<div class="ekit-offcanvas-toggle-wraper before">
+										<a href="#" class="ekit_navSidebar-button ekit_offcanvas-sidebar"
+											aria-label="offcanvas-menu">
+											<i aria-hidden="true" class="icon icon-menu-11"></i> </a>
+									</div>
+									<div class="ekit-sidebar-group info-group ekit-slide"
+										data-settings="{&quot;disable_bodyscroll&quot;:&quot;&quot;}">
+										<div class="ekit-overlay ekit-bg-black"></div>
+										<div class="ekit-sidebar-widget">
+											<div class="ekit_sidebar-widget-container">
+												<div class="ekit_widget-heading before">
+													<a href="#" class="ekit_close-side-widget"
+														aria-label="close-icon"><i aria-hidden="true"
+															class="icon icon-cross-circle"></i>
+													</a>
+												</div>
+												<div class="ekit_sidebar-textwidget">
+													<div class="widgetarea_warper widgetarea_warper_editable"
+														data-elementskit-widgetarea-key="604fc6e"
+														data-elementskit-widgetarea-index="99">
+														<div class="ekit-widget-area-container">
+															<div data-elementor-type="wp-post" data-elementor-id="1171"
+																class="elementor elementor-1171"
+																data-elementor-post-type="elementskit_content">
+																<div class="elementor-element elementor-element-0eaad30 e-con-full e-flex e-con e-parent"
+																	data-id="0eaad30" data-element_type="container"
+																	data-e-type="container">
+																	<div class="elementor-element elementor-element-9284efe elementor-nav-menu__align-start elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu"
+																		data-id="9284efe" data-element_type="widget"
+																		data-e-type="widget"
+																		data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot; viewBox=\&quot;0 0 320 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}"
+																		data-widget_type="nav-menu.default">
+																		<div class="elementor-widget-container">
+																			<nav
+																				class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+																				<ul id="menu-1-9284efe"
+																					class="elementor-nav-menu sm-vertical">
+																					<li
+																						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-554">
+																						<a target="_top" href="/"
+																							class="elementor-item">Home</a>
+																					</li>
+																					<li
+																						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-553">
+																						<a target="_top"
+																							href="/about-us"
+																							class="elementor-item">About
+																							Us</a>
+																					</li>
+																					<li
+																						class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-521 current_page_item menu-item-552">
+																						<a target="_top"
+																							href="/services"
+																							aria-current="page"
+																							class="elementor-item elementor-item-active">Services</a>
+																					</li>
+																					<li
+																						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-550">
+																						<a target="_top" href="/teams"
+																							class="elementor-item">Teams</a>
+																					</li>
+																					<li
+																						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1555">
+																						<a target="_top" href="/gallery"
+																							class="elementor-item">Gallery</a>
+																					</li>
+																					<li
+																						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-551">
+																						<a target="_top"
+																							href="/contact-us"
+																							class="elementor-item">Contact
+																							Us</a>
+																					</li>
+																				</ul>
+																			</nav>
+																			<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container"
+																				aria-hidden="true">
+																				<ul id="menu-2-9284efe"
+																					class="elementor-nav-menu sm-vertical">
+																					<li
+																						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-554">
+																						<a target="_top" href="/"
+																							class="elementor-item"
+																							tabindex="-1">Home</a>
+																					</li>
+																					<li
+																						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-553">
+																						<a target="_top"
+																							href="/about-us"
+																							class="elementor-item"
+																							tabindex="-1">About Us</a>
+																					</li>
+																					<li
+																						class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-521 current_page_item menu-item-552">
+																						<a target="_top"
+																							href="/services"
+																							aria-current="page"
+																							class="elementor-item elementor-item-active"
+																							tabindex="-1">Services</a>
+																					</li>
+																					<li
+																						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-550">
+																						<a target="_top" href="/teams"
+																							class="elementor-item"
+																							tabindex="-1">Teams</a>
+																					</li>
+																					<li
+																						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1555">
+																						<a target="_top" href="/gallery"
+																							class="elementor-item"
+																							tabindex="-1">Gallery</a>
+																					</li>
+																					<li
+																						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-551">
+																						<a target="_top"
+																							href="/contact-us"
+																							class="elementor-item"
+																							tabindex="-1">Contact Us</a>
+																					</li>
+																				</ul>
+																			</nav>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div data-elementor-type="wp-page" data-elementor-id="521" class="elementor elementor-521"
+		data-elementor-post-type="page">
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-7860506 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+			data-id="7860506" data-element_type="section" data-e-type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-background-overlay"></div>
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-47ec5862"
+					data-id="47ec5862" data-element_type="column" data-e-type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3efa572e elementor-widget elementor-widget-heading"
+							data-id="3efa572e" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h2 class="elementor-heading-title elementor-size-default">SERVICES</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-7e3f2f0f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="7e3f2f0f" data-element_type="section" data-e-type="section">
+			<div class="elementor-container elementor-column-gap-no">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-17718bc7"
+					data-id="17718bc7" data-element_type="column" data-e-type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<section
+							class="elementor-section elementor-inner-section elementor-element elementor-element-d25d419 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+							data-id="d25d419" data-element_type="section" data-e-type="section"
+							data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-container elementor-column-gap-no">
+								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-26ae1d9"
+									data-id="26ae1d9" data-element_type="column" data-e-type="column">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-ccfd807 elementor-widget__width-auto elementor-widget-laptop__width-initial elementor-widget-mobile__width-initial ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box"
+											data-id="ccfd807" data-element_type="widget" data-e-type="widget"
+											data-widget_type="elementskit-icon-box.default">
+											<div class="ekit-wid-con">
+												<a href="#" class="ekit_global_links">
+													<div
+														class="elementskit-infobox text-left text-left icon-lef-right-aligin elementor-animation- media  ">
+														<div class="elementskit-box-header elementor-animation-">
+															<div class="elementskit-info-box-icon  text-center">
+																<svg aria-hidden="true"
+																	class="elementkit-infobox-icon e-font-icon-svg e-fab-whatsapp"
+																	viewBox="0 0 448 512"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+																	</path>
+																</svg>
+															</div>
+														</div>
+														<div class="box-body">
+															<h4 class="elementskit-info-box-title">
+																8200393180</h4>
+															<p>Customer Care</p>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5d9cb16"
+									data-id="5d9cb16" data-element_type="column" data-e-type="column">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-9babfe1 elementor-widget__width-auto elementor-widget-laptop__width-initial elementor-widget-mobile__width-initial ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box"
+											data-id="9babfe1" data-element_type="widget" data-e-type="widget"
+											data-widget_type="elementskit-icon-box.default">
+											<div class="ekit-wid-con">
+												<a href="#" class="ekit_global_links">
+													<div
+														class="elementskit-infobox text-left text-left icon-lef-right-aligin elementor-animation- media  ">
+														<div class="elementskit-box-header elementor-animation-">
+															<div class="elementskit-info-box-icon  text-center">
+																<i aria-hidden="true"
+																	class="elementkit-infobox-icon jki jki-target-light"></i>
+															</div>
+														</div>
+														<div class="box-body">
+															<h4 class="elementskit-info-box-title">
+																Ahmedabad</h4>
+															<p>Our Salon</p>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-f6461c6"
+									data-id="f6461c6" data-element_type="column" data-e-type="column">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-f05f4f3 elementor-widget__width-auto elementor-widget-laptop__width-initial elementor-widget-mobile__width-initial ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box"
+											data-id="f05f4f3" data-element_type="widget" data-e-type="widget"
+											data-widget_type="elementskit-icon-box.default">
+											<div class="ekit-wid-con">
+												<a href="#" class="ekit_global_links">
+													<div
+														class="elementskit-infobox text-left text-left icon-lef-right-aligin elementor-animation- media  ">
+														<div class="elementskit-box-header elementor-animation-">
+															<div class="elementskit-info-box-icon  text-center">
+																<svg aria-hidden="true"
+																	class="elementkit-infobox-icon e-font-icon-svg e-far-clock"
+																	viewBox="0 0 512 512"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z">
+																	</path>
+																</svg>
+															</div>
+														</div>
+														<div class="box-body">
+															<h4 class="elementskit-info-box-title">
+																Open Monday-Sunday</h4>
+															<p>10 am – 09 pm (Last order 09 pm)</p>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-6bdb491 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="6bdb491" data-element_type="section" data-e-type="section">
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-bacb0f5 elementor-invisible"
+					data-id="bacb0f5" data-element_type="column" data-e-type="column"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:200}">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-73e1174 ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box"
+							data-id="73e1174" data-element_type="widget" data-e-type="widget"
+							data-widget_type="elementskit-icon-box.default">
+							<div class="ekit-wid-con">
+								<a href="#" class="ekit_global_links">
+									<div
+										class="elementskit-infobox text-center text-center icon-top-align elementor-animation-   ">
+										<div class="elementskit-box-header">
+											<div class="elementskit-info-box-icon ">
+												<img srcset="/wp-content/uploads/2024/12/icons-06.png.webp 256w, /wp-content/uploads/2024/12/icons-06-150x150.png.webp 150w"
+													src="/wp-content/uploads/2024/12/icons-06.png" decoding="async"
+													width="256" height="256"
+													data-src="/wp-content/uploads/2024/12/icons-06.png"
+													class="attachment- size-" alt=""
+													data-srcset="/wp-content/uploads/2024/12/icons-06.png.webp 256w, /wp-content/uploads/2024/12/icons-06-150x150.png.webp 150w"
+													data-sizes="(max-width: 256px) 100vw, 256px" />
+											</div>
+										</div>
+										<div class="box-body">
+											<h4 class="elementskit-info-box-title">
+												HAIRCUT</h4>
+											<p>Transform your look with a stylish and professional haircut tailored to
+												your face shape and preferences. Suitable for men, women, and kids.</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-87013a9 elementor-invisible"
+					data-id="87013a9" data-element_type="column" data-e-type="column"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:250}">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-41feed6 ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box"
+							data-id="41feed6" data-element_type="widget" data-e-type="widget"
+							data-widget_type="elementskit-icon-box.default">
+							<div class="ekit-wid-con">
+								<a href="#" class="ekit_global_links">
+									<div
+										class="elementskit-infobox text-center text-center icon-top-align elementor-animation-   ">
+										<div class="elementskit-box-header">
+											<div class="elementskit-info-box-icon ">
+												<img srcset="/wp-content/uploads/2024/12/icons-09.png.webp 256w, /wp-content/uploads/2024/12/icons-09-150x150.png.webp 150w"
+													src="/wp-content/uploads/2024/12/icons-09.png" decoding="async"
+													width="256" height="256"
+													data-src="/wp-content/uploads/2024/12/icons-09.png"
+													class="attachment- size-" alt=""
+													data-srcset="/wp-content/uploads/2024/12/icons-09.png.webp 256w, /wp-content/uploads/2024/12/icons-09-150x150.png.webp 150w"
+													data-sizes="(max-width: 256px) 100vw, 256px" />
+											</div>
+										</div>
+										<div class="box-body">
+											<h4 class="elementskit-info-box-title">
+												LONG CUT</h4>
+											<p>Get a sleek, layered, or voluminous long cut that enhances your natural
+												hair. Perfect for maintaining length while adding movement and style.
+											</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-146933a elementor-invisible"
+					data-id="146933a" data-element_type="column" data-e-type="column"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:250}">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-be7b6fd ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box"
+							data-id="be7b6fd" data-element_type="widget" data-e-type="widget"
+							data-widget_type="elementskit-icon-box.default">
+							<div class="ekit-wid-con">
+								<a href="#" class="ekit_global_links">
+									<div
+										class="elementskit-infobox text-center text-center icon-top-align elementor-animation-   ">
+										<div class="elementskit-box-header">
+											<div class="elementskit-info-box-icon ">
+												<img srcset="/wp-content/uploads/2024/12/icons-08.png.webp 256w, /wp-content/uploads/2024/12/icons-08-150x150.png.webp 150w"
+													src="/wp-content/uploads/2024/12/icons-08.png" loading="lazy"
+													decoding="async" width="256" height="256"
+													data-src="/wp-content/uploads/2024/12/icons-08.png"
+													class="attachment- size-" alt=""
+													data-srcset="/wp-content/uploads/2024/12/icons-08.png.webp 256w, /wp-content/uploads/2024/12/icons-08-150x150.png.webp 150w"
+													data-sizes="(max-width: 256px) 100vw, 256px" />
+											</div>
+										</div>
+										<div class="box-body">
+											<h4 class="elementskit-info-box-title">
+												BEARD TRIM</h4>
+											<p>Achieve a well-groomed and polished look with a precision beard trim.
+												Define your beard with expert shaping and detailing.</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-05f4ad5 elementor-invisible"
+					data-id="05f4ad5" data-element_type="column" data-e-type="column"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:300}">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f33b669 ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box"
+							data-id="f33b669" data-element_type="widget" data-e-type="widget"
+							data-widget_type="elementskit-icon-box.default">
+							<div class="ekit-wid-con">
+								<a href="#" class="ekit_global_links">
+									<div
+										class="elementskit-infobox text-center text-center icon-top-align elementor-animation-   ">
+										<div class="elementskit-box-header">
+											<div class="elementskit-info-box-icon ">
+												<img srcset="/wp-content/uploads/2024/12/icons-07.png.webp 256w, /wp-content/uploads/2024/12/icons-07-150x150.png.webp 150w"
+													src="/wp-content/uploads/2024/12/icons-07.png" loading="lazy"
+													decoding="async" width="256" height="256"
+													data-src="/wp-content/uploads/2024/12/icons-07.png"
+													class="attachment- size-" alt=""
+													data-srcset="/wp-content/uploads/2024/12/icons-07.png.webp 256w, /wp-content/uploads/2024/12/icons-07-150x150.png.webp 150w"
+													data-sizes="(max-width: 256px) 100vw, 256px" />
+											</div>
+										</div>
+										<div class="box-body">
+											<h4 class="elementskit-info-box-title">
+												SKIN FADE</h4>
+											<p>A modern, sharp, and clean fade that seamlessly blends into the skin for
+												a stylish, sleek appearance. Ideal for those who love trendy haircuts.
+											</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<style>
+			[data-id="c859266"] {
+				display: none !important;
+			}
+		</style>
+		<style id="snp-pdf-menu-style">
+html,body{overflow-x:hidden;max-width:100%;}
+.snp-menu{background:#121212;color:#ADADAD;font-family:Montserrat,system-ui,sans-serif;padding:56px 16px;width:100%;max-width:100%;box-sizing:border-box;overflow-x:hidden;}
+.snp-menu *{box-sizing:border-box;}
+.snp-inner{max-width:1100px;margin:0 auto;width:100%;}
+.snp-h2{font-family:'Red Rose',Montserrat,serif;color:#F6F6F9;text-align:center;font-size:clamp(28px,7vw,40px);margin:0 0 8px;}
+.snp-sub{text-align:center;color:#CE9C6B;letter-spacing:.3em;text-transform:uppercase;font-size:12px;margin:0 0 40px;}
+.snp-gtitle{text-align:center;background:#B5683C;color:#fff;font-size:clamp(20px,5vw,26px);letter-spacing:.08em;margin:40px 0 24px;padding:10px;border-radius:6px;font-family:'Red Rose',serif;}
+.snp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+.snp-cat{background:#1c1c1c;border:1px solid #2c2c2c;border-radius:8px;padding:18px;min-width:0;}
+.snp-cat-head{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid #B5683C;padding-bottom:10px;margin-bottom:12px;gap:10px;}
+.snp-cn{color:#CE9C6B;font-weight:600;font-size:16px;letter-spacing:.02em;min-width:0;}
+.snp-cols{display:flex;gap:10px;flex:0 0 auto;}
+.snp-cols span{width:50px;text-align:right;font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#8a8a8a;}
+.snp-row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.05);}
+.snp-row:last-child{border-bottom:0;}
+.snp-svc{font-size:13.5px;color:#e7e7e7;min-width:0;}
+.snp-pr{display:flex;gap:10px;flex:0 0 auto;}
+.snp-pr span{width:50px;text-align:right;font-weight:600;color:#CE9C6B;font-variant-numeric:tabular-nums;}
+.snp-pr span::before{content:"\20B9";opacity:.6;font-weight:400;margin-right:1px;}
+.snp-note{margin-top:12px;font-size:12px;font-style:italic;color:#B5683C;}
+.snp-foot{text-align:center;color:#8a8a8a;font-size:12px;margin-top:32px;}
+@media(max-width:760px){.snp-grid{grid-template-columns:1fr;}}
+@media(max-width:480px){
+ .snp-menu{padding:40px 10px;}
+ .snp-cat{padding:14px 12px;}
+ .snp-cols{gap:8px;}.snp-pr{gap:8px;}
+ .snp-cols span,.snp-pr span{width:42px;font-size:11px;}
+ .snp-cn{font-size:14px;}.snp-svc{font-size:12px;}
+}
+@media(max-width:360px){
+ .snp-cols span,.snp-pr span{width:36px;font-size:10px;}
+ .snp-svc{font-size:11.5px;}
+}
+</style>
+		<section class="snp-menu">
+			<div class="snp-inner">
+				<h2 class="snp-h2">Our Services</h2>
+				<p class="snp-sub">Price Menu</p>
+				<div class="snp-gender">
+					<h3 class="snp-gtitle">MAN</h3>
+					<div class="snp-grid">
+						<div class="snp-cat">
+							<div class="snp-cat-head"><span class="snp-cn">Hair Cut</span><span
+									class="snp-cols"><span>Master</span><span>Senior</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Hair Cut</span><span
+									class="snp-pr"><span>400</span><span>600</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Hair Cut Under-Graduate</span><span
+									class="snp-pr"><span>300</span><span>450</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Hair Wash</span><span
+									class="snp-pr"><span>150</span><span>150</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Hair Styling</span><span
+									class="snp-pr"><span>200</span><span>250</span></span></div>
+							<div class="snp-note">* Add On Hair Wash 50% Off</div>
+						</div>
+						<div class="snp-cat">
+							<div class="snp-cat-head"><span class="snp-cn">Beard</span><span
+									class="snp-cols"><span>Master</span><span>Senior</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Classic Shave</span><span
+									class="snp-pr"><span>200</span><span>250</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Beard Trim</span><span
+									class="snp-pr"><span>250</span><span>320</span></span></div>
+						</div>
+						<div class="snp-cat">
+							<div class="snp-cat-head"><span class="snp-cn">Relaxing Service</span></div>
+							<div class="snp-row"><span class="snp-svc">Head Massage</span><span
+									class="snp-pr"><span>400</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Head Massage with Wash</span><span
+									class="snp-pr"><span>500</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Hair - Spa</span><span
+									class="snp-pr"><span>900</span></span></div>
+						</div>
+						<div class="snp-cat">
+							<div class="snp-cat-head"><span class="snp-cn">Moroccon Ritual</span></div>
+							<div class="snp-row"><span class="snp-svc">Shea Ritual</span><span
+									class="snp-pr"><span>1350</span></span></div>
+							<div class="snp-row"><span class="snp-svc">M Oil Ritual</span><span
+									class="snp-pr"><span>750</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Moroccan Ritual</span><span
+									class="snp-pr"><span>1350</span></span></div>
+						</div>
+						<div class="snp-cat">
+							<div class="snp-cat-head"><span class="snp-cn">Olaplex</span></div>
+							<div class="snp-row"><span class="snp-svc">Stand-On</span><span
+									class="snp-pr"><span>1000</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Add-On</span><span
+									class="snp-pr"><span>600</span></span></div>
+						</div>
+						<div class="snp-cat">
+							<div class="snp-cat-head"><span class="snp-cn">Hair Color</span></div>
+							<div class="snp-row"><span class="snp-svc">Global Color</span><span
+									class="snp-pr"><span>1150</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Global Hi-Light</span><span
+									class="snp-pr"><span>2000</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Beard Color</span><span
+									class="snp-pr"><span>450</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Side Looks Color</span><span
+									class="snp-pr"><span>550</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Pre Lightning</span><span
+									class="snp-pr"><span>900</span></span></div>
+						</div>
+						<div class="snp-cat">
+							<div class="snp-cat-head"><span class="snp-cn">Texture Service</span></div>
+							<div class="snp-row"><span class="snp-svc">Olio Straight / Olio Bond</span><span
+									class="snp-pr"><span>3000</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Cystine Complex</span><span
+									class="snp-pr"><span>3700</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Nano Plastia / Botox</span><span
+									class="snp-pr"><span>4500</span></span></div>
+						</div>
+					</div>
+				</div>
+				<div class="snp-gender">
+					<h3 class="snp-gtitle">WOMEN</h3>
+					<div class="snp-grid">
+						<div class="snp-cat">
+							<div class="snp-cat-head"><span class="snp-cn">Hair Cut</span><span
+									class="snp-cols"><span>Master</span><span>Senior</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Hair Cut</span><span
+									class="snp-pr"><span>700</span><span>950</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Hair Cut Under-Graduate</span><span
+									class="snp-pr"><span>500</span><span>750</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Fringe</span><span
+									class="snp-pr"><span>200</span><span>300</span></span></div>
+							<div class="snp-note">* Add On Hair Wash 50% Off</div>
+						</div>
+						<div class="snp-cat">
+							<div class="snp-cat-head"><span class="snp-cn">Hair Wash & Conditioner</span><span
+									class="snp-cols"><span>Short</span><span>Medium</span><span>Long</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Hair Wash & Conditioner</span><span
+									class="snp-pr"><span>350</span><span>450</span><span>550</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Blow Dry</span><span
+									class="snp-pr"><span>450</span><span>550</span><span>650</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Hair Wash & Blow Dry</span><span
+									class="snp-pr"><span>650</span><span>800</span><span>900</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Ironing & Tongs</span><span
+									class="snp-pr"><span>700</span><span>800</span><span>900</span></span></div>
+						</div>
+						<div class="snp-cat">
+							<div class="snp-cat-head"><span class="snp-cn">Relaxing Service</span></div>
+							<div class="snp-row"><span class="snp-svc">Head Massage</span><span
+									class="snp-pr"><span>600</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Head Massage with Wash</span><span
+									class="snp-pr"><span>800</span></span></div>
+						</div>
+						<div class="snp-cat">
+							<div class="snp-cat-head"><span class="snp-cn">Hair Spa</span></div>
+							<div class="snp-row"><span class="snp-svc">Hair Spa 1-Scoop</span><span
+									class="snp-pr"><span>1000</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Hair Spa 2-Scoop</span><span
+									class="snp-pr"><span>1100</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Hair Spa 3-Scoop</span><span
+									class="snp-pr"><span>1200</span></span></div>
+						</div>
+						<div class="snp-cat">
+							<div class="snp-cat-head"><span class="snp-cn">Rituals</span></div>
+							<div class="snp-row"><span class="snp-svc">Shea Ritual</span><span
+									class="snp-pr"><span>2200</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Moroccon Ritual</span><span
+									class="snp-pr"><span>2200</span></span></div>
+							<div class="snp-row"><span class="snp-svc">M Oil Ritual</span><span
+									class="snp-pr"><span>1400</span></span></div>
+						</div>
+						<div class="snp-cat">
+							<div class="snp-cat-head"><span class="snp-cn">Olaplex</span></div>
+							<div class="snp-row"><span class="snp-svc">Stand On</span><span
+									class="snp-pr"><span>2250</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Add On</span><span
+									class="snp-pr"><span>1350</span></span></div>
+							<div class="snp-row"><span class="snp-svc">4 in One Mask</span><span
+									class="snp-pr"><span>1650</span></span></div>
+						</div>
+						<div class="snp-cat">
+							<div class="snp-cat-head"><span class="snp-cn">Hair Color</span></div>
+							<div class="snp-row"><span class="snp-svc">2-Inch</span><span
+									class="snp-pr"><span>1450</span></span></div>
+							<div class="snp-row"><span class="snp-svc">4-Inch</span><span
+									class="snp-pr"><span>1750</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Hair Line</span><span
+									class="snp-pr"><span>750</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Color per Streak</span><span
+									class="snp-pr"><span>400</span></span></div>
+						</div>
+						<div class="snp-cat">
+							<div class="snp-cat-head"><span class="snp-cn">Globle Color</span><span
+									class="snp-cols"><span>Short</span><span>Medium</span><span>Long</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Globle Color</span><span
+									class="snp-pr"><span>2800</span><span>3600</span><span>4200</span></span></div>
+						</div>
+						<div class="snp-cat">
+							<div class="snp-cat-head"><span class="snp-cn">Hi-Light / Baliage / Ombre</span><span
+									class="snp-cols"><span>Short</span><span>Medium</span><span>Long</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Hi-Light / Baliage / Ombre</span><span
+									class="snp-pr"><span>3800</span><span>4800</span><span>5800</span></span></div>
+						</div>
+						<div class="snp-cat">
+							<div class="snp-cat-head"><span class="snp-cn">Pre-Lightning & Color Glossing</span><span
+									class="snp-cols"><span>Short</span><span>Medium</span><span>Long</span></span></div>
+							<div class="snp-row"><span class="snp-svc">Pre-Lightning & Color Glossing</span><span
+									class="snp-pr"><span>1500</span><span>2000</span><span>2500</span></span></div>
+						</div>
+						<div class="snp-cat">
+							<div class="snp-cat-head"><span class="snp-cn">Texture Treatment (Olio Straight / Olio
+									Bound)</span><span
+									class="snp-cols"><span>Fringe</span><span>Short</span><span>Medium</span><span>Long</span></span>
+							</div>
+							<div class="snp-row"><span class="snp-svc">Texture Treatment</span><span
+									class="snp-pr"><span>1500</span><span>4000</span><span>5500</span><span>6500</span></span>
+							</div>
+						</div>
+						<div class="snp-cat">
+							<div class="snp-cat-head"><span class="snp-cn">Protein Reinforcement — Cystine
+									Complexe</span><span
+									class="snp-cols"><span>Fringe</span><span>Short</span><span>Medium</span><span>Long</span></span>
+							</div>
+							<div class="snp-row"><span class="snp-svc">Cystine Complexe</span><span
+									class="snp-pr"><span>3000</span><span>7000</span><span>8500</span><span>9500</span></span>
+							</div>
+						</div>
+						<div class="snp-cat">
+							<div class="snp-cat-head"><span class="snp-cn">Nano Plastia & Botox</span><span
+									class="snp-cols"><span>Fringe</span><span>Short</span><span>Medium</span><span>Long</span></span>
+							</div>
+							<div class="snp-row"><span class="snp-svc">Nano Plastia & Botox</span><span
+									class="snp-pr"><span>3000</span><span>8000</span><span>9500</span><span>10500</span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="snp-foot">All prices are in Indian Rupees. T&amp;C Apply.</p>
+			</div>
+		</section>
+		<section
+			class="elementor-section elementor-top-section elementor-element elementor-element-c859266 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+			data-id="c859266" data-element_type="section" data-e-type="section"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-81c6882"
+					data-id="81c6882" data-element_type="column" data-e-type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5521f11 elementor-widget elementor-widget-jkit_animated_text"
+							data-id="5521f11" data-element_type="widget" data-e-type="widget"
+							data-widget_type="jkit_animated_text.default">
+							<div class="jeg-elementor-kit jkit-animated-text jeg_module_521__6a10541c93a24"
+								data-style="rotating" data-text="MAN" data-rotate="blinds" data-delay="2500"
+								data-letter-speed="100">
+								<p class="animated-text"><span class="normal-text style-color"></span><span
+										class="dynamic-wrapper style-gradient"><span class="dynamic-text"><span
+												class="dynamic-text-letter">M</span><span
+												class="dynamic-text-letter">A</span><span
+												class="dynamic-text-letter">N</span></span></span><span
+										class="normal-text style-color"></span></p>
+							</div>
+						</div>
+						<section
+							class="elementor-section elementor-inner-section elementor-element elementor-element-299109f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+							data-id="299109f" data-element_type="section" data-e-type="section">
+							<div class="elementor-container elementor-column-gap-no">
+								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-e89d952"
+									data-id="e89d952" data-element_type="column" data-e-type="column">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-e2d4dc4 elementor-widget elementor-widget-heading"
+											data-id="e2d4dc4" data-element_type="widget" data-e-type="widget"
+											data-widget_type="heading.default">
+											<h3 class="elementor-heading-title elementor-size-default">Hair cut</h3>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-54e038b"
+									data-id="54e038b" data-element_type="column" data-e-type="column">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-0472d16 elementor-widget elementor-widget-heading"
+											data-id="0472d16" data-element_type="widget" data-e-type="widget"
+											data-widget_type="heading.default">
+											<h3 class="elementor-heading-title elementor-size-default">Master</h3>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-9593658"
+									data-id="9593658" data-element_type="column" data-e-type="column">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-f33514c elementor-widget elementor-widget-heading"
+											data-id="f33514c" data-element_type="widget" data-e-type="widget"
+											data-widget_type="heading.default">
+											<span class="elementor-heading-title elementor-size-default">Senior</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<div class="elementor-element elementor-element-4088e44 e-grid e-con-boxed e-con e-parent"
+							data-id="4088e44" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-fdea2a9 elementor-widget elementor-widget-heading"
+									data-id="fdea2a9" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Hair cut</h3>
+								</div>
+								<div class="elementor-element elementor-element-380ea70 elementor-widget elementor-widget-heading"
+									data-id="380ea70" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">400</h3>
+								</div>
+								<div class="elementor-element elementor-element-07fc958 elementor-widget elementor-widget-heading"
+									data-id="07fc958" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">600</h3>
+								</div>
+								<div class="elementor-element elementor-element-c184aff elementor-widget elementor-widget-heading"
+									data-id="c184aff" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Hair cut Undergraduate
+									</h3>
+								</div>
+								<div class="elementor-element elementor-element-239d69c elementor-widget elementor-widget-heading"
+									data-id="239d69c" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">300</h3>
+								</div>
+								<div class="elementor-element elementor-element-9e8724f elementor-widget elementor-widget-heading"
+									data-id="9e8724f" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">450</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-8ff0726 e-grid e-con-boxed e-con e-parent"
+							data-id="8ff0726" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-b9fea35 elementor-widget elementor-widget-heading"
+									data-id="b9fea35" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Hair Wash</h3>
+								</div>
+								<div class="elementor-element elementor-element-e25385a elementor-widget elementor-widget-heading"
+									data-id="e25385a" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">150</h3>
+								</div>
+								<div class="elementor-element elementor-element-0d9c4ca elementor-widget elementor-widget-heading"
+									data-id="0d9c4ca" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Hair Styling</h3>
+								</div>
+								<div class="elementor-element elementor-element-5e69076 elementor-widget elementor-widget-heading"
+									data-id="5e69076" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">200</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-682db47 elementor-align-left elementor-widget elementor-widget-button"
+							data-id="682db47" data-element_type="widget" data-e-type="widget"
+							data-widget_type="button.default">
+							<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-shrink"
+								href="#">
+								<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">* Add On Hair Wash 50% Off</span>
+								</span>
+							</a>
+						</div>
+						<div class="elementor-element elementor-element-1856fa5 elementor-widget elementor-widget-heading"
+							data-id="1856fa5" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h3 class="elementor-heading-title elementor-size-default">Beard</h3>
+						</div>
+						<div class="elementor-element elementor-element-c84a297 e-grid e-con-boxed e-con e-parent"
+							data-id="c84a297" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-4652372 elementor-widget elementor-widget-heading"
+									data-id="4652372" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Classic Shave</h3>
+								</div>
+								<div class="elementor-element elementor-element-dae59ca elementor-widget elementor-widget-heading"
+									data-id="dae59ca" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">200</h3>
+								</div>
+								<div class="elementor-element elementor-element-4d8ae5a elementor-widget elementor-widget-heading"
+									data-id="4d8ae5a" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Premium Shave</h3>
+								</div>
+								<div class="elementor-element elementor-element-a4cc806 elementor-widget elementor-widget-heading"
+									data-id="a4cc806" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">450</h3>
+								</div>
+								<div class="elementor-element elementor-element-e958600 elementor-widget elementor-widget-heading"
+									data-id="e958600" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Beard Trim</h3>
+								</div>
+								<div class="elementor-element elementor-element-2c696cc elementor-widget elementor-widget-heading"
+									data-id="2c696cc" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">250</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-a1a4ccc elementor-widget elementor-widget-heading"
+							data-id="a1a4ccc" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h3 class="elementor-heading-title elementor-size-default">Relaxing Services</h3>
+						</div>
+						<div class="elementor-element elementor-element-ccc8468 e-grid e-con-boxed e-con e-parent"
+							data-id="ccc8468" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-c464055 elementor-widget elementor-widget-heading"
+									data-id="c464055" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Head Massage</h3>
+								</div>
+								<div class="elementor-element elementor-element-8f0e330 elementor-widget elementor-widget-heading"
+									data-id="8f0e330" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">400</h3>
+								</div>
+								<div class="elementor-element elementor-element-7fb36a6 elementor-widget elementor-widget-heading"
+									data-id="7fb36a6" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Head Massage with Wash
+									</h3>
+								</div>
+								<div class="elementor-element elementor-element-b98dc89 elementor-widget elementor-widget-heading"
+									data-id="b98dc89" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">500</h3>
+								</div>
+								<div class="elementor-element elementor-element-fb851a7 elementor-widget elementor-widget-heading"
+									data-id="fb851a7" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Hair - Spa</h3>
+								</div>
+								<div class="elementor-element elementor-element-7f87d67 elementor-widget elementor-widget-heading"
+									data-id="7f87d67" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">900</h3>
+								</div>
+								<div class="elementor-element elementor-element-39afcd7 elementor-widget elementor-widget-heading"
+									data-id="39afcd7" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Detox Scrab Loreal</h3>
+								</div>
+								<div class="elementor-element elementor-element-bc60e1f elementor-widget elementor-widget-heading"
+									data-id="bc60e1f" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">250</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-102a392 elementor-widget elementor-widget-heading"
+							data-id="102a392" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h3 class="elementor-heading-title elementor-size-default">Hair Treatment</h3>
+						</div>
+						<div class="elementor-element elementor-element-c226f8d e-grid e-con-boxed e-con e-parent"
+							data-id="c226f8d" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-a1e526e elementor-widget elementor-widget-heading"
+									data-id="a1e526e" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Shine Shiler</h3>
+								</div>
+								<div class="elementor-element elementor-element-a63d0f8 elementor-widget elementor-widget-heading"
+									data-id="a63d0f8" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">550</h3>
+								</div>
+								<div class="elementor-element elementor-element-b296cf6 elementor-widget elementor-widget-heading"
+									data-id="b296cf6" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Botox Treatment</h3>
+								</div>
+								<div class="elementor-element elementor-element-cfd9223 elementor-widget elementor-widget-heading"
+									data-id="cfd9223" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">750</h3>
+								</div>
+								<div class="elementor-element elementor-element-599c866 elementor-widget elementor-widget-heading"
+									data-id="599c866" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Scalp Ritual</h3>
+								</div>
+								<div class="elementor-element elementor-element-45912fa elementor-widget elementor-widget-heading"
+									data-id="45912fa" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">1250</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-3a9b4c4 elementor-widget elementor-widget-heading"
+							data-id="3a9b4c4" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h3 class="elementor-heading-title elementor-size-default">Moroccon Ritual</h3>
+						</div>
+						<div class="elementor-element elementor-element-01b006f e-grid e-con-boxed e-con e-parent"
+							data-id="01b006f" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-f297ef9 elementor-widget elementor-widget-heading"
+									data-id="f297ef9" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Moroccon Ritual<br><span
+											style="font-size:15px">(Hydrating, Smooth, Repair)</span></h3>
+								</div>
+								<div class="elementor-element elementor-element-53e43f4 elementor-widget elementor-widget-heading"
+									data-id="53e43f4" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">1350</h3>
+								</div>
+								<div class="elementor-element elementor-element-096bcf5 elementor-widget elementor-widget-heading"
+									data-id="096bcf5" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Oil Ritual</h3>
+								</div>
+								<div class="elementor-element elementor-element-d276511 elementor-widget elementor-widget-heading"
+									data-id="d276511" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">750</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-f62f445 elementor-widget elementor-widget-heading"
+							data-id="f62f445" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h3 class="elementor-heading-title elementor-size-default">Olaplex</h3>
+						</div>
+						<div class="elementor-element elementor-element-6d68029 e-grid e-con-boxed e-con e-parent"
+							data-id="6d68029" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-2589a57 elementor-widget elementor-widget-heading"
+									data-id="2589a57" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Olaplex Treatment</h3>
+								</div>
+								<div class="elementor-element elementor-element-fd54796 elementor-widget elementor-widget-heading"
+									data-id="fd54796" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">1000</h3>
+								</div>
+								<div class="elementor-element elementor-element-fa9d3a4 elementor-widget elementor-widget-heading"
+									data-id="fa9d3a4" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Add On</h3>
+								</div>
+								<div class="elementor-element elementor-element-1babea3 elementor-widget elementor-widget-heading"
+									data-id="1babea3" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">600</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-6af5c51 elementor-widget elementor-widget-heading"
+							data-id="6af5c51" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h3 class="elementor-heading-title elementor-size-default">4 in one Masque</h3>
+						</div>
+						<div class="elementor-element elementor-element-2e50c6b e-grid e-con-boxed e-con e-parent"
+							data-id="2e50c6b" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-adb771d elementor-widget elementor-widget-heading"
+									data-id="adb771d" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Deep Conditioners</h3>
+								</div>
+								<div class="elementor-element elementor-element-d24b34a elementor-widget elementor-widget-heading"
+									data-id="d24b34a" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">600</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-08d0a0e elementor-widget elementor-widget-heading"
+							data-id="08d0a0e" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h3 class="elementor-heading-title elementor-size-default">Hair Color</h3>
+						</div>
+						<div class="elementor-element elementor-element-2d37b5e e-grid e-con-boxed e-con e-parent"
+							data-id="2d37b5e" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-e21f198 elementor-widget elementor-widget-heading"
+									data-id="e21f198" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Global Color</h3>
+								</div>
+								<div class="elementor-element elementor-element-7575897 elementor-widget elementor-widget-heading"
+									data-id="7575897" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">1150</h3>
+								</div>
+								<div class="elementor-element elementor-element-a1b5a26 elementor-widget elementor-widget-heading"
+									data-id="a1b5a26" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Global - Hi - Light</h3>
+								</div>
+								<div class="elementor-element elementor-element-b093dac elementor-widget elementor-widget-heading"
+									data-id="b093dac" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">2000</h3>
+								</div>
+								<div class="elementor-element elementor-element-a39c6f6 elementor-widget elementor-widget-heading"
+									data-id="a39c6f6" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Beard Color</h3>
+								</div>
+								<div class="elementor-element elementor-element-ca2075b elementor-widget elementor-widget-heading"
+									data-id="ca2075b" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">450</h3>
+								</div>
+								<div class="elementor-element elementor-element-3e3478a elementor-widget elementor-widget-heading"
+									data-id="3e3478a" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Side Looks Color</h3>
+								</div>
+								<div class="elementor-element elementor-element-7fa4e11 elementor-widget elementor-widget-heading"
+									data-id="7fa4e11" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">550</h3>
+								</div>
+								<div class="elementor-element elementor-element-521b3e2 elementor-widget elementor-widget-heading"
+									data-id="521b3e2" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Color Pre Streak</h3>
+								</div>
+								<div class="elementor-element elementor-element-f36341b elementor-widget elementor-widget-heading"
+									data-id="f36341b" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">150</h3>
+								</div>
+								<div class="elementor-element elementor-element-fc844eb elementor-widget elementor-widget-heading"
+									data-id="fc844eb" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Pre - Lightning</h3>
+								</div>
+								<div class="elementor-element elementor-element-2e241a4 elementor-widget elementor-widget-heading"
+									data-id="2e241a4" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">900</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-4e37653 elementor-widget elementor-widget-heading"
+							data-id="4e37653" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h3 class="elementor-heading-title elementor-size-default">Color Glossing</h3>
+						</div>
+						<div class="elementor-element elementor-element-9a4df1f e-grid e-con-boxed e-con e-parent"
+							data-id="9a4df1f" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-6889937 elementor-widget elementor-widget-heading"
+									data-id="6889937" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Color Glossing</h3>
+								</div>
+								<div class="elementor-element elementor-element-0cb407f elementor-widget elementor-widget-heading"
+									data-id="0cb407f" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">300</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-9b9cb1f elementor-widget elementor-widget-heading"
+							data-id="9b9cb1f" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h3 class="elementor-heading-title elementor-size-default">Taxture Services</h3>
+						</div>
+						<div class="elementor-element elementor-element-c02a0ca e-grid e-con-boxed e-con e-parent"
+							data-id="c02a0ca" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-b0b459d elementor-widget elementor-widget-heading"
+									data-id="b0b459d" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Olio - Stright / Olio -
+										Bond</h3>
+								</div>
+								<div class="elementor-element elementor-element-3a91d89 elementor-widget elementor-widget-heading"
+									data-id="3a91d89" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">3000</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-965c543 elementor-widget elementor-widget-heading"
+							data-id="965c543" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h3 class="elementor-heading-title elementor-size-default">Protien Reinforcement Treatmenet
+							</h3>
+						</div>
+						<div class="elementor-element elementor-element-9e994e6 e-grid e-con-boxed e-con e-parent"
+							data-id="9e994e6" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-ba94b56 elementor-widget elementor-widget-heading"
+									data-id="ba94b56" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Cystine Complex</h3>
+								</div>
+								<div class="elementor-element elementor-element-16654a6 elementor-widget elementor-widget-heading"
+									data-id="16654a6" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">3700</h3>
+								</div>
+								<div class="elementor-element elementor-element-0b71974 elementor-widget elementor-widget-heading"
+									data-id="0b71974" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Nano Plastiya</h3>
+								</div>
+								<div class="elementor-element elementor-element-6b9dd4e elementor-widget elementor-widget-heading"
+									data-id="6b9dd4e" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">4500</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-35c54be"
+					data-id="35c54be" data-element_type="column" data-e-type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-94ce5a1 elementor-widget elementor-widget-jkit_animated_text"
+							data-id="94ce5a1" data-element_type="widget" data-e-type="widget"
+							data-widget_type="jkit_animated_text.default">
+							<div class="jeg-elementor-kit jkit-animated-text jeg_module_521_1_6a10541c945a3"
+								data-style="rotating" data-text="MAN" data-rotate="blinds" data-delay="2500"
+								data-letter-speed="100">
+								<p class="animated-text"><span class="normal-text style-color"></span><span
+										class="dynamic-wrapper style-gradient"><span class="dynamic-text"><span
+												class="dynamic-text-letter">M</span><span
+												class="dynamic-text-letter">A</span><span
+												class="dynamic-text-letter">N</span></span></span><span
+										class="normal-text style-color"></span></p>
+							</div>
+						</div>
+						<section
+							class="elementor-section elementor-inner-section elementor-element elementor-element-954a3c6 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+							data-id="954a3c6" data-element_type="section" data-e-type="section">
+							<div class="elementor-container elementor-column-gap-no">
+								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-ec5ba7d"
+									data-id="ec5ba7d" data-element_type="column" data-e-type="column">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-a549afb elementor-widget elementor-widget-heading"
+											data-id="a549afb" data-element_type="widget" data-e-type="widget"
+											data-widget_type="heading.default">
+											<h3 class="elementor-heading-title elementor-size-default">Hair cut</h3>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-43ad601"
+									data-id="43ad601" data-element_type="column" data-e-type="column">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-5846e77 elementor-widget elementor-widget-heading"
+											data-id="5846e77" data-element_type="widget" data-e-type="widget"
+											data-widget_type="heading.default">
+											<h3 class="elementor-heading-title elementor-size-default">Master</h3>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-e617e3f"
+									data-id="e617e3f" data-element_type="column" data-e-type="column">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-d9bab0c elementor-widget elementor-widget-heading"
+											data-id="d9bab0c" data-element_type="widget" data-e-type="widget"
+											data-widget_type="heading.default">
+											<span class="elementor-heading-title elementor-size-default">Senior</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<div class="elementor-element elementor-element-d1f16dd e-grid e-con-boxed e-con e-parent"
+							data-id="d1f16dd" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-23183e5 elementor-widget elementor-widget-heading"
+									data-id="23183e5" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Hair cut</h3>
+								</div>
+								<div class="elementor-element elementor-element-8b3996f elementor-widget elementor-widget-heading"
+									data-id="8b3996f" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">400</h3>
+								</div>
+								<div class="elementor-element elementor-element-c28930d elementor-widget elementor-widget-heading"
+									data-id="c28930d" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">600</h3>
+								</div>
+								<div class="elementor-element elementor-element-c250671 elementor-widget elementor-widget-heading"
+									data-id="c250671" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Hair cut Undergraduate
+									</h3>
+								</div>
+								<div class="elementor-element elementor-element-a6d8954 elementor-widget elementor-widget-heading"
+									data-id="a6d8954" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">300</h3>
+								</div>
+								<div class="elementor-element elementor-element-6c73f81 elementor-widget elementor-widget-heading"
+									data-id="6c73f81" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">450</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-a02bd1b e-grid e-con-boxed e-con e-parent"
+							data-id="a02bd1b" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-3883c78 elementor-widget elementor-widget-heading"
+									data-id="3883c78" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Hair Wash</h3>
+								</div>
+								<div class="elementor-element elementor-element-8356a03 elementor-widget elementor-widget-heading"
+									data-id="8356a03" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">150</h3>
+								</div>
+								<div class="elementor-element elementor-element-3908d70 elementor-widget elementor-widget-heading"
+									data-id="3908d70" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Hair Styling</h3>
+								</div>
+								<div class="elementor-element elementor-element-35c4e31 elementor-widget elementor-widget-heading"
+									data-id="35c4e31" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">200</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-02aa161 elementor-align-left elementor-widget elementor-widget-button"
+							data-id="02aa161" data-element_type="widget" data-e-type="widget"
+							data-widget_type="button.default">
+							<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-shrink"
+								href="#">
+								<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">* Add On Hair Wash 50% Off</span>
+								</span>
+							</a>
+						</div>
+						<div class="elementor-element elementor-element-38b7ec1 elementor-widget elementor-widget-heading"
+							data-id="38b7ec1" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h3 class="elementor-heading-title elementor-size-default">Beard</h3>
+						</div>
+						<div class="elementor-element elementor-element-6d6e3ca e-grid e-con-boxed e-con e-parent"
+							data-id="6d6e3ca" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-e145356 elementor-widget elementor-widget-heading"
+									data-id="e145356" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Classic Shave</h3>
+								</div>
+								<div class="elementor-element elementor-element-2bf8074 elementor-widget elementor-widget-heading"
+									data-id="2bf8074" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">200</h3>
+								</div>
+								<div class="elementor-element elementor-element-9b56cca elementor-widget elementor-widget-heading"
+									data-id="9b56cca" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Premium Shave</h3>
+								</div>
+								<div class="elementor-element elementor-element-b397be0 elementor-widget elementor-widget-heading"
+									data-id="b397be0" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">450</h3>
+								</div>
+								<div class="elementor-element elementor-element-a7605d1 elementor-widget elementor-widget-heading"
+									data-id="a7605d1" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Beard Trim</h3>
+								</div>
+								<div class="elementor-element elementor-element-3589664 elementor-widget elementor-widget-heading"
+									data-id="3589664" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">250</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-17d8e30 elementor-widget elementor-widget-heading"
+							data-id="17d8e30" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h3 class="elementor-heading-title elementor-size-default">Relaxing Services</h3>
+						</div>
+						<div class="elementor-element elementor-element-87930f4 e-grid e-con-boxed e-con e-parent"
+							data-id="87930f4" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-fc151ed elementor-widget elementor-widget-heading"
+									data-id="fc151ed" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Head Massage</h3>
+								</div>
+								<div class="elementor-element elementor-element-9d5b75c elementor-widget elementor-widget-heading"
+									data-id="9d5b75c" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">400</h3>
+								</div>
+								<div class="elementor-element elementor-element-c74fb34 elementor-widget elementor-widget-heading"
+									data-id="c74fb34" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Head Massage with Wash
+									</h3>
+								</div>
+								<div class="elementor-element elementor-element-4dc6422 elementor-widget elementor-widget-heading"
+									data-id="4dc6422" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">500</h3>
+								</div>
+								<div class="elementor-element elementor-element-95b6f03 elementor-widget elementor-widget-heading"
+									data-id="95b6f03" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Hair - Spa</h3>
+								</div>
+								<div class="elementor-element elementor-element-89336ea elementor-widget elementor-widget-heading"
+									data-id="89336ea" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">900</h3>
+								</div>
+								<div class="elementor-element elementor-element-552c369 elementor-widget elementor-widget-heading"
+									data-id="552c369" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Detox Scrab Loreal</h3>
+								</div>
+								<div class="elementor-element elementor-element-a096acf elementor-widget elementor-widget-heading"
+									data-id="a096acf" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">250</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-c98e2e7 elementor-widget elementor-widget-heading"
+							data-id="c98e2e7" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h3 class="elementor-heading-title elementor-size-default">Hair Treatment</h3>
+						</div>
+						<div class="elementor-element elementor-element-63cd281 e-grid e-con-boxed e-con e-parent"
+							data-id="63cd281" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-749773b elementor-widget elementor-widget-heading"
+									data-id="749773b" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Shine Shiler</h3>
+								</div>
+								<div class="elementor-element elementor-element-40be86a elementor-widget elementor-widget-heading"
+									data-id="40be86a" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">550</h3>
+								</div>
+								<div class="elementor-element elementor-element-2dcacc3 elementor-widget elementor-widget-heading"
+									data-id="2dcacc3" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Botox Treatment</h3>
+								</div>
+								<div class="elementor-element elementor-element-d9dc1b6 elementor-widget elementor-widget-heading"
+									data-id="d9dc1b6" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">750</h3>
+								</div>
+								<div class="elementor-element elementor-element-3709b38 elementor-widget elementor-widget-heading"
+									data-id="3709b38" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Scalp Ritual</h3>
+								</div>
+								<div class="elementor-element elementor-element-c831b24 elementor-widget elementor-widget-heading"
+									data-id="c831b24" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">1250</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-c3b0627 elementor-widget elementor-widget-heading"
+							data-id="c3b0627" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h3 class="elementor-heading-title elementor-size-default">Moroccon Ritual</h3>
+						</div>
+						<div class="elementor-element elementor-element-b913d96 e-grid e-con-boxed e-con e-parent"
+							data-id="b913d96" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-f5c3351 elementor-widget elementor-widget-heading"
+									data-id="f5c3351" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Moroccon Ritual<br><span
+											style="font-size:15px">(Hydrating, Smooth, Repair)</span></h3>
+								</div>
+								<div class="elementor-element elementor-element-3a1458e elementor-widget elementor-widget-heading"
+									data-id="3a1458e" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">1350</h3>
+								</div>
+								<div class="elementor-element elementor-element-5c25e52 elementor-widget elementor-widget-heading"
+									data-id="5c25e52" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Oil Ritual</h3>
+								</div>
+								<div class="elementor-element elementor-element-1ba8bef elementor-widget elementor-widget-heading"
+									data-id="1ba8bef" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">750</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-b1d3f7e elementor-widget elementor-widget-heading"
+							data-id="b1d3f7e" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h3 class="elementor-heading-title elementor-size-default">Olaplex</h3>
+						</div>
+						<div class="elementor-element elementor-element-fe6c1ca e-grid e-con-boxed e-con e-parent"
+							data-id="fe6c1ca" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-e5b0e95 elementor-widget elementor-widget-heading"
+									data-id="e5b0e95" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Olaplex Treatment</h3>
+								</div>
+								<div class="elementor-element elementor-element-50544a9 elementor-widget elementor-widget-heading"
+									data-id="50544a9" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">1000</h3>
+								</div>
+								<div class="elementor-element elementor-element-8493ee6 elementor-widget elementor-widget-heading"
+									data-id="8493ee6" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Add On</h3>
+								</div>
+								<div class="elementor-element elementor-element-7336fb4 elementor-widget elementor-widget-heading"
+									data-id="7336fb4" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">600</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-039a6be elementor-widget elementor-widget-heading"
+							data-id="039a6be" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h3 class="elementor-heading-title elementor-size-default">4 in one Masque</h3>
+						</div>
+						<div class="elementor-element elementor-element-ea87693 e-grid e-con-boxed e-con e-parent"
+							data-id="ea87693" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-2f15858 elementor-widget elementor-widget-heading"
+									data-id="2f15858" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Deep Conditioners</h3>
+								</div>
+								<div class="elementor-element elementor-element-e81b525 elementor-widget elementor-widget-heading"
+									data-id="e81b525" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">600</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-7ebdab7 elementor-widget elementor-widget-heading"
+							data-id="7ebdab7" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h3 class="elementor-heading-title elementor-size-default">Hair Color</h3>
+						</div>
+						<div class="elementor-element elementor-element-1fdd5d1 e-grid e-con-boxed e-con e-parent"
+							data-id="1fdd5d1" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-2c50a89 elementor-widget elementor-widget-heading"
+									data-id="2c50a89" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Global Color</h3>
+								</div>
+								<div class="elementor-element elementor-element-ab38a93 elementor-widget elementor-widget-heading"
+									data-id="ab38a93" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">1150</h3>
+								</div>
+								<div class="elementor-element elementor-element-2e1df15 elementor-widget elementor-widget-heading"
+									data-id="2e1df15" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Global - Hi - Light</h3>
+								</div>
+								<div class="elementor-element elementor-element-b5bb2c6 elementor-widget elementor-widget-heading"
+									data-id="b5bb2c6" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">2000</h3>
+								</div>
+								<div class="elementor-element elementor-element-7b2583c elementor-widget elementor-widget-heading"
+									data-id="7b2583c" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Beard Color</h3>
+								</div>
+								<div class="elementor-element elementor-element-730f617 elementor-widget elementor-widget-heading"
+									data-id="730f617" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">450</h3>
+								</div>
+								<div class="elementor-element elementor-element-77cd5cf elementor-widget elementor-widget-heading"
+									data-id="77cd5cf" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Side Looks Color</h3>
+								</div>
+								<div class="elementor-element elementor-element-d45879a elementor-widget elementor-widget-heading"
+									data-id="d45879a" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">550</h3>
+								</div>
+								<div class="elementor-element elementor-element-496c6fd elementor-widget elementor-widget-heading"
+									data-id="496c6fd" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Color Pre Streak</h3>
+								</div>
+								<div class="elementor-element elementor-element-1ec0b70 elementor-widget elementor-widget-heading"
+									data-id="1ec0b70" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">150</h3>
+								</div>
+								<div class="elementor-element elementor-element-9b8d119 elementor-widget elementor-widget-heading"
+									data-id="9b8d119" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Pre - Lightning</h3>
+								</div>
+								<div class="elementor-element elementor-element-d41a8ca elementor-widget elementor-widget-heading"
+									data-id="d41a8ca" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">900</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-723e907 elementor-widget elementor-widget-heading"
+							data-id="723e907" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h3 class="elementor-heading-title elementor-size-default">Color Glossing</h3>
+						</div>
+						<div class="elementor-element elementor-element-a19aea0 e-grid e-con-boxed e-con e-parent"
+							data-id="a19aea0" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-e05d0c6 elementor-widget elementor-widget-heading"
+									data-id="e05d0c6" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Color Glossing</h3>
+								</div>
+								<div class="elementor-element elementor-element-44a2528 elementor-widget elementor-widget-heading"
+									data-id="44a2528" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">300</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-f7eda4a elementor-widget elementor-widget-heading"
+							data-id="f7eda4a" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h3 class="elementor-heading-title elementor-size-default">Taxture Services</h3>
+						</div>
+						<div class="elementor-element elementor-element-25372d2 e-grid e-con-boxed e-con e-parent"
+							data-id="25372d2" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-f0f4544 elementor-widget elementor-widget-heading"
+									data-id="f0f4544" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Olio - Stright / Olio -
+										Bond</h3>
+								</div>
+								<div class="elementor-element elementor-element-f5c6824 elementor-widget elementor-widget-heading"
+									data-id="f5c6824" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">3000</h3>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-d77049a elementor-widget elementor-widget-heading"
+							data-id="d77049a" data-element_type="widget" data-e-type="widget"
+							data-widget_type="heading.default">
+							<h3 class="elementor-heading-title elementor-size-default">Protien Reinforcement Treatmenet
+							</h3>
+						</div>
+						<div class="elementor-element elementor-element-c2e57dc e-grid e-con-boxed e-con e-parent"
+							data-id="c2e57dc" data-element_type="container" data-e-type="container">
+							<div class="e-con-inner">
+								<div class="elementor-element elementor-element-61398ce elementor-widget elementor-widget-heading"
+									data-id="61398ce" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Cystine Complex</h3>
+								</div>
+								<div class="elementor-element elementor-element-605f738 elementor-widget elementor-widget-heading"
+									data-id="605f738" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">3700</h3>
+								</div>
+								<div class="elementor-element elementor-element-ea8f01d elementor-widget elementor-widget-heading"
+									data-id="ea8f01d" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">Nano Plastiya</h3>
+								</div>
+								<div class="elementor-element elementor-element-fe193ae elementor-widget elementor-widget-heading"
+									data-id="fe193ae" data-element_type="widget" data-e-type="widget"
+									data-widget_type="heading.default">
+									<h3 class="elementor-heading-title elementor-size-default">4500</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="ekit-template-content-markup ekit-template-content-footer ekit-template-content-theme-support">
+		<div data-elementor-type="wp-post" data-elementor-id="214" class="elementor elementor-214"
+			data-elementor-post-type="elementskit_template">
+			<div class="elementor-element elementor-element-83b8b5c e-con-full elementor-hidden-mobile e-flex e-con e-parent"
+				data-id="83b8b5c" data-element_type="container" data-e-type="container"
+				data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-b4e1dfb e-flex e-con-boxed e-con e-child"
+					data-id="b4e1dfb" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+						<div class="elementor-element elementor-element-bfd906a elementor-widget elementor-widget-image"
+							data-id="bfd906a" data-element_type="widget" data-e-type="widget"
+							data-widget_type="image.default">
+							<img srcset="/wp-content/uploads/2024/12/Saloon.png.webp 3152w, /wp-content/uploads/2024/12/Saloon-300x57.png.webp 300w, /wp-content/uploads/2024/12/Saloon-1024x196.png.webp 1024w, /wp-content/uploads/2024/12/Saloon-768x147.png.webp 768w, /wp-content/uploads/2024/12/Saloon-1536x293.png.webp 1536w, /wp-content/uploads/2024/12/Saloon-2048x391.png.webp 2048w"
+								src="/wp-content/uploads/2024/12/Saloon.png" width="3152" height="602"
+								data-src="/wp-content/uploads/2024/12/Saloon.png"
+								class="attachment-full size-full wp-image-202" alt="" decoding="async"
+								data-srcset="/wp-content/uploads/2024/12/Saloon.png.webp 3152w, /wp-content/uploads/2024/12/Saloon-300x57.png.webp 300w, /wp-content/uploads/2024/12/Saloon-1024x196.png.webp 1024w, /wp-content/uploads/2024/12/Saloon-768x147.png.webp 768w, /wp-content/uploads/2024/12/Saloon-1536x293.png.webp 1536w, /wp-content/uploads/2024/12/Saloon-2048x391.png.webp 2048w"
+								data-sizes="(max-width: 3152px) 100vw, 3152px" />
+						</div>
+						<div class="elementor-element elementor-element-316f12f elementor-nav-menu__align-center elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu"
+							data-id="316f12f" data-element_type="widget" data-e-type="widget"
+							data-settings="{&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot; viewBox=\&quot;0 0 320 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}"
+							data-widget_type="nav-menu.default">
+							<div class="elementor-widget-container">
+								<nav
+									class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+									<ul id="menu-1-316f12f" class="elementor-nav-menu">
+										<li
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-554">
+											<a target="_top" href="/" class="elementor-item">Home</a>
+										</li>
+										<li
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-553">
+											<a target="_top" href="/about-us" class="elementor-item">About Us</a>
+										</li>
+										<li
+											class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-521 current_page_item menu-item-552">
+											<a target="_top" href="/services" aria-current="page"
+												class="elementor-item elementor-item-active">Services</a>
+										</li>
+										<li
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-550">
+											<a target="_top" href="/teams" class="elementor-item">Teams</a>
+										</li>
+										<li
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1555">
+											<a target="_top" href="/gallery" class="elementor-item">Gallery</a>
+										</li>
+										<li
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-551">
+											<a target="_top" href="/contact-us" class="elementor-item">Contact Us</a>
+										</li>
+									</ul>
+								</nav>
+								<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container"
+									aria-hidden="true">
+									<ul id="menu-2-316f12f" class="elementor-nav-menu">
+										<li
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-554">
+											<a target="_top" href="/" class="elementor-item" tabindex="-1">Home</a>
+										</li>
+										<li
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-553">
+											<a target="_top" href="/about-us" class="elementor-item" tabindex="-1">About
+												Us</a>
+										</li>
+										<li
+											class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-521 current_page_item menu-item-552">
+											<a target="_top" href="/services" aria-current="page"
+												class="elementor-item elementor-item-active" tabindex="-1">Services</a>
+										</li>
+										<li
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-550">
+											<a target="_top" href="/teams" class="elementor-item"
+												tabindex="-1">Teams</a>
+										</li>
+										<li
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1555">
+											<a target="_top" href="/gallery" class="elementor-item"
+												tabindex="-1">Gallery</a>
+										</li>
+										<li
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-551">
+											<a target="_top" href="/contact-us" class="elementor-item"
+												tabindex="-1">Contact Us</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-237909b elementor-widget elementor-widget-text-editor"
+							data-id="237909b" data-element_type="widget" data-e-type="widget"
+							data-widget_type="text-editor.default">
+							<p style="font-family: Nunito,sans-serif;">©2026 | Salt N Pepper | Develop by  by  <a
+									class="popup-link"
+									style="position: relative; color: #0177d9; text-decoration: none;"
+									href="https://uminber.com/"><b>Uminber Designs</b></a> </p>
+							<p> </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="elementor-element elementor-element-6801b9e e-con-full elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet e-flex e-con e-parent"
+				data-id="6801b9e" data-element_type="container" data-e-type="container"
+				data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-232a891 e-flex e-con-boxed e-con e-child"
+					data-id="232a891" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+						<div class="elementor-element elementor-element-ff9f556 elementor-widget elementor-widget-image"
+							data-id="ff9f556" data-element_type="widget" data-e-type="widget"
+							data-widget_type="image.default">
+							<img srcset="/wp-content/uploads/2024/12/Saloon.png.webp 3152w, /wp-content/uploads/2024/12/Saloon-300x57.png.webp 300w, /wp-content/uploads/2024/12/Saloon-1024x196.png.webp 1024w, /wp-content/uploads/2024/12/Saloon-768x147.png.webp 768w, /wp-content/uploads/2024/12/Saloon-1536x293.png.webp 1536w, /wp-content/uploads/2024/12/Saloon-2048x391.png.webp 2048w"
+								src="/wp-content/uploads/2024/12/Saloon.png" width="3152" height="602"
+								data-src="/wp-content/uploads/2024/12/Saloon.png"
+								class="attachment-full size-full wp-image-202" alt="" decoding="async"
+								data-srcset="/wp-content/uploads/2024/12/Saloon
