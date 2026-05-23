@@ -1,4 +1,4 @@
-# Salt 'N' Pepper — Exact Clone (React + Vite + Tailwind)
+# Salt 'N' Pepper — (React + Vite + Tailwind)
 
 An exact, pixel-identical clone of snpsalon.in. Each React route renders the site's
 own original HTML, CSS, JavaScript and images, so the layout matches the live site
